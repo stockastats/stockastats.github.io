@@ -45,7 +45,7 @@ Prénom actuellement plutôt féminin (environ 4 fois plus de filles que de gar�
 
 ### CAMILLE
 
-Prénom extrêmement fréquent (plusieurs milliers de naissances par an depuis les années 1980) qui était plutôt masculin jusqu'en 1960 — deux Camille sur trois étaient des garçons. Il est devenu très féminin dans les années 2000 (20 fois plus de filles que de garçons), puis semble amorcer un retour vers la parité.
+Prénom extrêmement fréquent (plusieurs milliers de naissances par an depuis les années 1980) qui était plutôt masculin jusqu'en 1960 — deux Camille sur trois étaient des garçons. Il est devenu très féminin dans les années 2000 (20 fois plus de filles que de garçons), puis semble amorcer un retour vers un genre plus masculin.
 
 ![Répartition filles/garçons du prénom CAMILLE](CAMILLE.png)
 
@@ -53,7 +53,7 @@ Prénom extrêmement fréquent (plusieurs milliers de naissances par an depuis l
 
 ### CHARLIE
 
-Prénom anciennement très masculin dans les années 1980–90, devenu plus féminin depuis 2000. Aujourd'hui la parité est presque atteinte.
+Prénom anciennement très masculin dans les années 1980–90, devenu plus féminin depuis 2000, mais une tendance vers un retour à la parité.
 
 ![Répartition filles/garçons du prénom CHARLIE](CHARLIE.png)
 
@@ -85,7 +85,7 @@ Prénom en forte croissance dont le nombre d'occurrences augmente fortement depu
 
 ### JESSY
 
-Prénom à dominante masculine mais avec une part féminine non négligeable, en particulier dans les années 1990–2000.
+Prénom à dominante masculine mais avec une part féminine non négligeable jusque dans les années 80.
 
 ![Répartition filles/garçons du prénom JESSY](JESSY.png)
 
@@ -93,19 +93,12 @@ Prénom à dominante masculine mais avec une part féminine non négligeable, en
 
 ### LOÏS
 
-Prénom discret mais remarquablement équilibré sur les dernières décennies, avec une légère tendance féminine récente.
+Prénom discret et plutôt masculin sauf pour un petit équilibrage dans les années 2000 (à cause de Loïs Lane ?).
 
 ![Répartition filles/garçons du prénom LOÏS](LOÏS.png)
 
 ---
 
-### MAÉ
-
-Prénom récent avec une part féminine légèrement majoritaire, mais qui reste relativement mixte depuis son apparition.
-
-![Répartition filles/garçons du prénom MAÉ](MAÉ.png)
-
----
 
 ## Source
 
