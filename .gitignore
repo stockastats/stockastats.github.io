@@ -1,0 +1,36 @@
+# Environnement R
+.Rproj.user/
+.Rhistory
+.RData
+.Ruserdata
+
+# Environnement Python
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+venv/
+ENV/
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Dépendances
+node_modules/
+package-lock.json
+
+# Fichiers temporaires
+.quarto/
+*.tmp
+.Rmd.bak
+
+# Ne pas ignorer le dossier docs (output du site)
+# Les fichiers générés par Quarto doivent être poussés sur GitHub Pages
