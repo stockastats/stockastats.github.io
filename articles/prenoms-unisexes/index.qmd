@@ -43,6 +43,14 @@ Prénom actuellement plutôt féminin (environ 4 fois plus de filles que de gar�
 
 ---
 
+### CAMILLE
+
+Prénom extrêmement fréquent (plusieurs milliers de naissances par an depuis les années 1980) qui était plutôt masculin jusqu'en 1960 — deux Camille sur trois étaient des garçons. Il est devenu très féminin dans les années 2000 (20 fois plus de filles que de garçons), puis semble amorcer un retour vers la parité.
+
+![Répartition filles/garçons du prénom CAMILLE](CAMILLE.png)
+
+---
+
 ### CHARLIE
 
 Prénom anciennement très masculin dans les années 1980–90, devenu plus féminin depuis 2000. Aujourd'hui la parité est presque atteinte.
