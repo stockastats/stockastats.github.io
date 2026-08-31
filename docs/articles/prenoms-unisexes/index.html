@@ -121,8 +121,7 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#fréquence-et-ratio" id="toc-fréquence-et-ratio" class="nav-link active" data-scroll-target="#fréquence-et-ratio">Fréquence et ratio</a></li>
-  <li><a href="#les-prénoms-qui-changent-de-sexe" id="toc-les-prénoms-qui-changent-de-sexe" class="nav-link" data-scroll-target="#les-prénoms-qui-changent-de-sexe">Les prénoms qui changent de sexe</a>
+  <li><a href="#les-prénoms-qui-changent-de-sexe" id="toc-les-prénoms-qui-changent-de-sexe" class="nav-link active" data-scroll-target="#les-prénoms-qui-changent-de-sexe">Les prénoms qui changent de sexe</a>
   <ul class="collapse">
   <li><a href="#alix" id="toc-alix" class="nav-link" data-scroll-target="#alix">ALIX</a></li>
   <li><a href="#camille" id="toc-camille" class="nav-link" data-scroll-target="#camille">CAMILLE</a></li>
@@ -132,7 +131,6 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#eden" id="toc-eden" class="nav-link" data-scroll-target="#eden">EDEN</a></li>
   <li><a href="#jessy" id="toc-jessy" class="nav-link" data-scroll-target="#jessy">JESSY</a></li>
   <li><a href="#loïs" id="toc-loïs" class="nav-link" data-scroll-target="#loïs">LOÏS</a></li>
-  <li><a href="#maé" id="toc-maé" class="nav-link" data-scroll-target="#maé">MAÉ</a></li>
   </ul></li>
   <li><a href="#source" id="toc-source" class="nav-link" data-scroll-target="#source">Source</a></li>
   </ul>
@@ -178,69 +176,16 @@ ul.task-list li input[type="checkbox"] {
 
 <p>On connaît les prénoms qui peuvent être donnés indépendamment aux garçons et aux filles sans que cela ne choque trop (on pensera au classique « Dominique »), la règle étant que le prénom s’écrive de la même façon (exit donc la comparaison Pascale/Pascal).</p>
 <p>Il peut être intéressant de regarder l’ensemble des prénoms qui ont été donnés aux deux sexes. Pour ce faire, on utilise les données de l’INSEE qui liste pour chaque année le nombre de fois où chaque prénom a été donné en France pour chacun des sexes, année par année depuis 1900 (à condition que celui-ci ne soit pas trop rare : au moins donné 3 fois).</p>
-<section id="fréquence-et-ratio" class="level2">
-<h2 class="anchored" data-anchor-id="fréquence-et-ratio">Fréquence et ratio</h2>
-<p>Il y a deux choses à regarder pour ces prénoms : leur fréquence totale et le ratio du nombre de fois où ce prénom a été donné à un garçon par rapport au nombre de fois où il a été donné à une fille. Dans le meilleur des cas, ce ratio est de 1 (autant de garçons que de filles portent ce prénom). On peut considérer que jusqu’à un ratio de 5 ou 6, on reste dans des rapports raisonnables — le prénom peut encore être considéré comme unisexe.</p>
-<p>En se limitant aux prénoms donnés depuis 2000 (données récentes), avec un bon ratio (inférieur à 6) et un nombre important d’occurrences (au moins 4 000 fois), on obtient notamment :</p>
-<table class="caption-top table">
-<thead>
-<tr class="header">
-<th>Prénom</th>
-<th>Nb Garçons</th>
-<th>Nb Filles</th>
-<th>Ratio</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Alix</td>
-<td>3 373</td>
-<td>11 983</td>
-<td>3.6</td>
-</tr>
-<tr class="even">
-<td>Charlie</td>
-<td>6 173</td>
-<td>6 934</td>
-<td>1.1</td>
-</tr>
-<tr class="odd">
-<td>Eden</td>
-<td>10 903</td>
-<td>8 325</td>
-<td>1.3</td>
-</tr>
-<tr class="even">
-<td>Jessy</td>
-<td>3 972</td>
-<td>839</td>
-<td>4.7</td>
-</tr>
-<tr class="odd">
-<td>Loïs</td>
-<td>4 521</td>
-<td>2 058</td>
-<td>2.2</td>
-</tr>
-<tr class="even">
-<td>Maé</td>
-<td>1 766</td>
-<td>2 726</td>
-<td>1.5</td>
-</tr>
-<tr class="odd">
-<td>Sasha</td>
-<td>7 548</td>
-<td>5 734</td>
-<td>1.3</td>
-</tr>
-</tbody>
-</table>
-<p>Quand les ratios sont beaucoup plus élevés, les prénoms sont quasi exclusivement attribués à un seul sexe. À noter que la précision du calcul est moins fiable dans ces cas, l’INSEE ne comptabilisant pas les années où un prénom a été donné moins de 3 fois — ce qui biaise légèrement les résultats.</p>
-</section>
 <section id="les-prénoms-qui-changent-de-sexe" class="level2">
 <h2 class="anchored" data-anchor-id="les-prénoms-qui-changent-de-sexe">Les prénoms qui changent de sexe</h2>
-<p>Une information encore plus intéressante : l’évolution de l’attribution de certains prénoms au fil du temps. En ne gardant que les prénoms donnés assez fréquemment (au moins 500 fois à chaque sexe), on peut représenter graphiquement l’évolution de la proportion de filles et de garçons à qui ces prénoms ont été attribués.</p>
+<p>On s’intéresse ici aux prénoms dont la répartition filles/garçons a <strong>évolué significativement</strong> au cours du temps. Les filtres appliqués sur les données INSEE (depuis 1900) :</p>
+<ul>
+<li>au moins <strong>10 années</strong> où le prénom a été donné avec suffisamment d’occurrences (≥ 50 naissances cette année-là)</li>
+<li>au moins <strong>10 000 naissances</strong> au total, pour écarter les prénoms trop rares</li>
+<li>un <strong>ratio moyen ≤ 4</strong> (le prénom n’est pas structurellement très genré — exit les Jean, Marie, etc.)</li>
+<li>le prénom a atteint <strong>au moins une fois un déséquilibre 75/25</strong> dans un sens ou dans l’autre</li>
+</ul>
+<p>On retient ensuite les prénoms avec le plus grand écart entre leur proportion maximale et minimale de garçons, c’est-à-dire ceux dont le genre a le plus « basculé » dans le temps.</p>
 <p>Les graphiques se lisent ainsi : en abscisse les années, en ordonnée la proportion garçons/filles sur une échelle symétrique. La ligne centrale représente la parité parfaite. La zone bleue indique une majorité de garçons, la zone rose une majorité de filles. Les intervalles de confiance (zone grise) sont particulièrement utiles pour les petits effectifs.</p>
 <hr>
 <section id="alix" class="level3">
@@ -256,7 +201,7 @@ ul.task-list li input[type="checkbox"] {
 </section>
 <section id="camille" class="level3">
 <h3 class="anchored" data-anchor-id="camille">CAMILLE</h3>
-<p>Prénom extrêmement fréquent (plusieurs milliers de naissances par an depuis les années 1980) qui était plutôt masculin jusqu’en 1960 — deux Camille sur trois étaient des garçons. Il est devenu très féminin dans les années 2000 (20 fois plus de filles que de garçons), puis semble amorcer un retour vers la parité.</p>
+<p>Prénom extrêmement fréquent (plusieurs milliers de naissances par an depuis les années 1980) qui était plutôt masculin jusqu’en 1960 — deux Camille sur trois étaient des garçons. Il est devenu très féminin dans les années 2000 (20 fois plus de filles que de garçons), puis semble amorcer un retour vers un genre plus masculin.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="CAMILLE.png" class="img-fluid figure-img"></p>
@@ -267,7 +212,7 @@ ul.task-list li input[type="checkbox"] {
 </section>
 <section id="charlie" class="level3">
 <h3 class="anchored" data-anchor-id="charlie">CHARLIE</h3>
-<p>Prénom anciennement très masculin dans les années 1980–90, devenu plus féminin depuis 2000. Aujourd’hui la parité est presque atteinte.</p>
+<p>Prénom anciennement très masculin dans les années 1980–90, devenu plus féminin depuis 2000, mais une tendance vers un retour à la parité.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="CHARLIE.png" class="img-fluid figure-img"></p>
@@ -311,7 +256,7 @@ ul.task-list li input[type="checkbox"] {
 </section>
 <section id="jessy" class="level3">
 <h3 class="anchored" data-anchor-id="jessy">JESSY</h3>
-<p>Prénom à dominante masculine mais avec une part féminine non négligeable, en particulier dans les années 1990–2000.</p>
+<p>Prénom à dominante masculine mais avec une part féminine non négligeable jusque dans les années 80.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="JESSY.png" class="img-fluid figure-img"></p>
@@ -322,22 +267,11 @@ ul.task-list li input[type="checkbox"] {
 </section>
 <section id="loïs" class="level3">
 <h3 class="anchored" data-anchor-id="loïs">LOÏS</h3>
-<p>Prénom discret mais remarquablement équilibré sur les dernières décennies, avec une légère tendance féminine récente.</p>
+<p>Prénom discret et plutôt masculin sauf pour un petit équilibrage dans les années 2000 (à cause de Loïs Lane ?).</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="LOÏS.png" class="img-fluid figure-img"></p>
 <figcaption>Répartition filles/garçons du prénom LOÏS</figcaption>
-</figure>
-</div>
-<hr>
-</section>
-<section id="maé" class="level3">
-<h3 class="anchored" data-anchor-id="maé">MAÉ</h3>
-<p>Prénom récent avec une part féminine légèrement majoritaire, mais qui reste relativement mixte depuis son apparition.</p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="MAÉ.png" class="img-fluid figure-img"></p>
-<figcaption>Répartition filles/garçons du prénom MAÉ</figcaption>
 </figure>
 </div>
 <hr>
