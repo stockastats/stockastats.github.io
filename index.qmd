@@ -1,0 +1,15 @@
+---
+title: "Bienvenue"
+---
+
+# Site d'articles
+
+Ce site Quarto centralise des articles venant d'autres depots Git.
+
+## Workflow rapide
+
+1. Cloner un depot source localement.
+2. Recuperer un fichier Markdown/Quarto a publier.
+3. L'importer dans `articles/` avec le script d'import.
+4. Lancer `quarto render`.
+5. Pousser le dossier `docs/` sur `main` pour GitHub Pages.

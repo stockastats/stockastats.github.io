@@ -1,0 +1,10 @@
+---
+title: "Articles"
+listing:
+  contents: "*.qmd"
+  sort: "date desc"
+  type: default
+  fields: [title, date, description]
+---
+
+Tous les articles importes apparaissent ci-dessous.

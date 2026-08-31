@@ -1,0 +1,21 @@
+project:
+  type: website
+  output-dir: docs
+
+website:
+  title: "StockaStats"
+  navbar:
+    left:
+      - text: "Accueil"
+        href: index.qmd
+      - text: "Articles"
+        href: articles/index.qmd
+
+format:
+  html:
+    theme: minty
+    css: styles.css
+    toc: true
+
+execute:
+  freeze: auto
