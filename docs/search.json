@@ -42,11 +42,39 @@
     "text": "Documentation Quarto : https://quarto.org/docs/\nConfiguration Quarto websites : https://quarto.org/docs/websites/\nGitHub Pages : https://docs.github.com/en/pages"
   },
   {
+    "objectID": "articles/prenoms-unisexes/index.html",
+    "href": "articles/prenoms-unisexes/index.html",
+    "title": "Les prénoms unisexes mais pas trop",
+    "section": "",
+    "text": "On connaît les prénoms qui peuvent être donnés indépendamment aux garçons et aux filles sans que cela ne choque trop (on pensera au classique « Dominique »), la règle étant que le prénom s’écrive de la même façon (exit donc la comparaison Pascale/Pascal).\nIl peut être intéressant de regarder l’ensemble des prénoms qui ont été donnés aux deux sexes. Pour ce faire, on utilise les données de l’INSEE qui liste pour chaque année le nombre de fois où chaque prénom a été donné en France pour chacun des sexes, année par année depuis 1900 (à condition que celui-ci ne soit pas trop rare : au moins donné 3 fois)."
+  },
+  {
+    "objectID": "articles/prenoms-unisexes/index.html#fréquence-et-ratio",
+    "href": "articles/prenoms-unisexes/index.html#fréquence-et-ratio",
+    "title": "Les prénoms unisexes mais pas trop",
+    "section": "Fréquence et ratio",
+    "text": "Fréquence et ratio\nIl y a deux choses à regarder pour ces prénoms : leur fréquence totale et le ratio du nombre de fois où ce prénom a été donné à un garçon par rapport au nombre de fois où il a été donné à une fille. Dans le meilleur des cas, ce ratio est de 1 (autant de garçons que de filles portent ce prénom). On peut considérer que jusqu’à un ratio de 5 ou 6, on reste dans des rapports raisonnables — le prénom peut encore être considéré comme unisexe.\nEn se limitant aux prénoms donnés depuis 2000 (données récentes), avec un bon ratio (inférieur à 6) et un nombre important d’occurrences (au moins 4 000 fois), on obtient notamment :\n\n\n\nPrénom\nNb Garçons\nNb Filles\nRatio\n\n\n\n\nAlix\n3 373\n11 983\n3.6\n\n\nCharlie\n6 173\n6 934\n1.1\n\n\nEden\n10 903\n8 325\n1.3\n\n\nJessy\n3 972\n839\n4.7\n\n\nLoïs\n4 521\n2 058\n2.2\n\n\nMaé\n1 766\n2 726\n1.5\n\n\nSasha\n7 548\n5 734\n1.3\n\n\n\nQuand les ratios sont beaucoup plus élevés, les prénoms sont quasi exclusivement attribués à un seul sexe. À noter que la précision du calcul est moins fiable dans ces cas, l’INSEE ne comptabilisant pas les années où un prénom a été donné moins de 3 fois — ce qui biaise légèrement les résultats."
+  },
+  {
+    "objectID": "articles/prenoms-unisexes/index.html#les-prénoms-qui-changent-de-sexe",
+    "href": "articles/prenoms-unisexes/index.html#les-prénoms-qui-changent-de-sexe",
+    "title": "Les prénoms unisexes mais pas trop",
+    "section": "Les prénoms qui changent de sexe",
+    "text": "Les prénoms qui changent de sexe\nUne information encore plus intéressante : l’évolution de l’attribution de certains prénoms au fil du temps. En ne gardant que les prénoms donnés assez fréquemment (au moins 500 fois à chaque sexe), on peut représenter graphiquement l’évolution de la proportion de filles et de garçons à qui ces prénoms ont été attribués.\nLes graphiques se lisent ainsi : en abscisse les années, en ordonnée la proportion garçons/filles sur une échelle symétrique. La ligne centrale représente la parité parfaite. La zone bleue indique une majorité de garçons, la zone rose une majorité de filles. Les intervalles de confiance (zone grise) sont particulièrement utiles pour les petits effectifs.\n\n\nALIX\nPrénom actuellement plutôt féminin (environ 4 fois plus de filles que de garçons), sauf durant une période entre 1930 et 1960 où le rapport était plus équilibré.\n\n\n\nRépartition filles/garçons du prénom ALIX\n\n\n\n\n\nCHARLIE\nPrénom anciennement très masculin dans les années 1980–90, devenu plus féminin depuis 2000. Aujourd’hui la parité est presque atteinte.\n\n\n\nRépartition filles/garçons du prénom CHARLIE\n\n\n\n\n\nDANY\nPrénom plutôt rare jusque dans les années 1940, avec une forte augmentation dans les années 1950. Depuis les années 1960, ce prénom devient de plus en plus masculin : il y a désormais environ 20 fois plus de garçons que de filles.\n\n\n\nRépartition filles/garçons du prénom DANY\n\n\n\n\n\nDOMINIQUE\nPrénom relativement fréquent et très masculin jusque dans les années 1940 (500 naissances par an), il a explosé dans les années 1950–60 avec plus de 20 000 enfants par an et une répartition proche du 50/50. Depuis, il est retourné dans un certain anonymat et est de nouveau principalement porté par des garçons.\n\n\n\nRépartition filles/garçons du prénom DOMINIQUE\n\n\n\n\n\nEDEN\nPrénom en forte croissance dont le nombre d’occurrences augmente fortement depuis les années 2000, avec une tendance à se « masculiniser » depuis 2010.\n\n\n\nRépartition filles/garçons du prénom EDEN\n\n\n\n\n\nJESSY\nPrénom à dominante masculine mais avec une part féminine non négligeable, en particulier dans les années 1990–2000.\n\n\n\nRépartition filles/garçons du prénom JESSY\n\n\n\n\n\nLOÏS\nPrénom discret mais remarquablement équilibré sur les dernières décennies, avec une légère tendance féminine récente.\n\n\n\nRépartition filles/garçons du prénom LOÏS\n\n\n\n\n\nMAÉ\nPrénom récent avec une part féminine légèrement majoritaire, mais qui reste relativement mixte depuis son apparition.\n\n\n\nRépartition filles/garçons du prénom MAÉ"
+  },
+  {
+    "objectID": "articles/prenoms-unisexes/index.html#source",
+    "href": "articles/prenoms-unisexes/index.html#source",
+    "title": "Les prénoms unisexes mais pas trop",
+    "section": "Source",
+    "text": "Source\nDonnées : INSEE — Fichier des prénoms, édition 2025.\nCode source : disponible sur GitHub."
+  },
+  {
     "objectID": "articles/index.html",
     "href": "articles/index.html",
     "title": "Articles",
     "section": "",
-    "text": "Tous les articles importes apparaissent ci-dessous.\n\n\n\n\n\n\n\n\nNo matching items"
+    "text": "Tous les articles importes apparaissent ci-dessous.\n\n\n\n\n\n\n\n\n\nLes prénoms unisexes mais pas trop\n\n\nAnalyse des prénoms donnés aux deux sexes en France depuis 1900 : ratios, fréquences et évolutions surprenantes au fil du temps.\n\n\n\n\n\nAug 31, 2026\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "index.html",
