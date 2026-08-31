@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Articles – StockaStats</title>
+<title>installation – StockaStats</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -26,28 +26,61 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
 </style>
 
 
-<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="../site_libs/quarto-nav/headroom.min.js"></script>
-<script src="../site_libs/clipboard/clipboard.min.js"></script>
-<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="../site_libs/quarto-search/fuse.min.js"></script>
-<script src="../site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="../">
-<script src="../site_libs/quarto-listing/list.min.js"></script>
-<script src="../site_libs/quarto-listing/quarto-listing.js"></script>
-<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
-<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="../site_libs/quarto-html/popper.min.js"></script>
-<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="../site_libs/quarto-html/anchor.min.js"></script>
-<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-0c993683fdd6a26c1aa2f976085b22ef.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<script src="site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap-0c993683fdd6a26c1aa2f976085b22ef.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -75,67 +108,9 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
-<script>
 
-  window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-listing .list');
-    if (!listingTargetEl) {
-      // No listing discovered, do not attach.
-      return; 
-    }
 
-    const options = {
-      valueNames: ['listing-title','listing-date','listing-description',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
-      
-      searchColumns: [],
-    };
-
-    window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-listing'] = new List('listing-listing', options);
-
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  });
-
-  window.addEventListener('hashchange',() => {
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  })
-  </script>
-
-  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
-  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-chtml.js" type="text/javascript"></script>
-
-<script type="text/javascript">
-const typesetMath = (el) => {
-  if (window.MathJax) {
-    // MathJax Typeset
-    window.MathJax.typeset([el]);
-  } else if (window.katex) {
-    // KaTeX Render
-    var mathElements = el.getElementsByClassName("math");
-    var macros = [];
-    for (var i = 0; i < mathElements.length; i++) {
-      var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
-        window.katex.render(texText.data, mathElements[i], {
-          displayMode: mathElements[i].classList.contains('display'),
-          throwOnError: false,
-          macros: macros,
-          fleqn: false
-        });
-      }
-    }
-  }
-}
-window.Quarto = {
-  typesetMath
-};
-</script>
-
-<link rel="stylesheet" href="../styles.css">
+<link rel="stylesheet" href="styles.css">
 </head>
 
 <body class="nav-fixed quarto-light">
@@ -145,7 +120,7 @@ window.Quarto = {
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a class="navbar-brand" href="../index.html">
+    <a class="navbar-brand" href="./index.html">
     <span class="navbar-title">StockaStats</span>
     </a>
   </div>
@@ -156,11 +131,11 @@ window.Quarto = {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="../index.html"> 
+    <a class="nav-link" href="./index.html"> 
 <span class="menu-text">Accueil</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link active" href="../articles/index.html" aria-current="page"> 
+    <a class="nav-link" href="./articles/index.html"> 
 <span class="menu-text">Articles</span></a>
   </li>  
 </ul>
@@ -174,42 +149,129 @@ window.Quarto = {
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#guide-de-configuration---stockastats-github-pages" id="toc-guide-de-configuration---stockastats-github-pages" class="nav-link active" data-scroll-target="#guide-de-configuration---stockastats-github-pages">🚀 Guide de Configuration - StockaStats GitHub Pages</a>
+  <ul class="collapse">
+  <li><a href="#étapes-complétées" id="toc-étapes-complétées" class="nav-link" data-scroll-target="#étapes-complétées">✅ Étapes complétées</a></li>
+  <li><a href="#prochaines-étapes" id="toc-prochaines-étapes" class="nav-link" data-scroll-target="#prochaines-étapes">📋 Prochaines étapes</a>
+  <ul class="collapse">
+  <li><a href="#installer-quarto-important" id="toc-installer-quarto-important" class="nav-link" data-scroll-target="#installer-quarto-important">1️⃣ Installer Quarto (IMPORTANT)</a></li>
+  <li><a href="#pousser-les-modifications-sur-github" id="toc-pousser-les-modifications-sur-github" class="nav-link" data-scroll-target="#pousser-les-modifications-sur-github">2️⃣ Pousser les modifications sur GitHub</a></li>
+  <li><a href="#configurer-github-pages-dans-les-paramètres-du-dépôt" id="toc-configurer-github-pages-dans-les-paramètres-du-dépôt" class="nav-link" data-scroll-target="#configurer-github-pages-dans-les-paramètres-du-dépôt">3️⃣ Configurer GitHub Pages (dans les paramètres du dépôt)</a></li>
+  <li><a href="#workflow-de-publication-avec-quarto" id="toc-workflow-de-publication-avec-quarto" class="nav-link" data-scroll-target="#workflow-de-publication-avec-quarto">4️⃣ Workflow de publication avec Quarto</a></li>
+  </ul></li>
+  <li><a href="#personnalisation" id="toc-personnalisation" class="nav-link" data-scroll-target="#personnalisation">🎨 Personnalisation</a></li>
+  <li><a href="#dépannage" id="toc-dépannage" class="nav-link" data-scroll-target="#dépannage">❓ Dépannage</a>
+  <ul class="collapse">
+  <li><a href="#error-404-sur-le-site" id="toc-error-404-sur-le-site" class="nav-link" data-scroll-target="#error-404-sur-le-site">“Error 404” sur le site</a></li>
+  <li><a href="#quarto-command-not-found" id="toc-quarto-command-not-found" class="nav-link" data-scroll-target="#quarto-command-not-found">Quarto: command not found</a></li>
+  </ul></li>
+  <li><a href="#ressources" id="toc-ressources" class="nav-link" data-scroll-target="#ressources">📚 Ressources</a></li>
+  </ul></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
-<main class="content" id="quarto-document-content">
-
-<header id="title-block-header" class="quarto-title-block default">
-<div class="quarto-title">
-<h1 class="title">Articles</h1>
-</div>
-
-
-
-<div class="quarto-title-meta">
-
-    
-  
-    
-  </div>
-  
-
-
-</header>
-
-
-<p>Tous les articles importes apparaissent ci-dessous.</p>
+<main class="content" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block"></header>
 
 
 
 
-<div class="quarto-listing quarto-listing-container-default" id="listing-listing">
-<div class="list quarto-listing-default">
+<section id="guide-de-configuration---stockastats-github-pages" class="level1">
+<h1>🚀 Guide de Configuration - StockaStats GitHub Pages</h1>
+<section id="étapes-complétées" class="level2">
+<h2 class="anchored" data-anchor-id="étapes-complétées">✅ Étapes complétées</h2>
+<ul>
+<li>✅ Site HTML de base créé dans <code>docs/</code></li>
+<li>✅ Pages structurées (Accueil + Articles)</li>
+<li>✅ Navigation et design appliqués</li>
+<li>✅ Fichier <code>.gitignore</code> configuré</li>
+</ul>
+</section>
+<section id="prochaines-étapes" class="level2">
+<h2 class="anchored" data-anchor-id="prochaines-étapes">📋 Prochaines étapes</h2>
+<section id="installer-quarto-important" class="level3">
+<h3 class="anchored" data-anchor-id="installer-quarto-important">1️⃣ Installer Quarto (IMPORTANT)</h3>
+<p>Le système Quarto n’est pas encore installé sur votre machine. Pour un fonctionnement complet :</p>
+<ol type="1">
+<li>Rendez-vous sur : <strong>https://quarto.org/docs/get-started/</strong></li>
+<li>Téléchargez l’installeur Windows (.msi)</li>
+<li>Lancez l’installation en double-cliquant le fichier</li>
+<li>Suivez l’assistant d’installation par défaut</li>
+</ol>
+<p>Après l’installation, testez dans PowerShell :</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode powershell code-with-copy"><code class="sourceCode powershell"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>quarto <span class="op">--</span>version</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</section>
+<section id="pousser-les-modifications-sur-github" class="level3">
+<h3 class="anchored" data-anchor-id="pousser-les-modifications-sur-github">2️⃣ Pousser les modifications sur GitHub</h3>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2"><pre class="sourceCode powershell code-with-copy"><code class="sourceCode powershell"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="fu">cd</span> <span class="st">"C:\Users\GPNBO\Code\stockastats.github.io"</span></span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a><span class="co"># Ajouter les nouveaux fichiers</span></span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>git add docs<span class="op">/</span></span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>git add <span class="op">.</span><span class="fu">gitignore</span></span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a><span class="co"># Créer un commit</span></span>
+<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a>git commit <span class="op">-</span>m <span class="st">"feat: site HTML initial avec navigation et sommaire"</span></span>
+<span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-10"><a href="#cb2-10" aria-hidden="true" tabindex="-1"></a><span class="co"># Pousser vers GitHub</span></span>
+<span id="cb2-11"><a href="#cb2-11" aria-hidden="true" tabindex="-1"></a>git push origin main</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</section>
+<section id="configurer-github-pages-dans-les-paramètres-du-dépôt" class="level3">
+<h3 class="anchored" data-anchor-id="configurer-github-pages-dans-les-paramètres-du-dépôt">3️⃣ Configurer GitHub Pages (dans les paramètres du dépôt)</h3>
+<p>Sur GitHub.com : 1. Allez dans <strong>Settings</strong> → <strong>Pages</strong> 2. Sous “Build and deployment” : - <strong>Source</strong> : <code>Deploy from a branch</code> - <strong>Branch</strong> : Sélectionnez <code>main</code> - <strong>Folder</strong> : Sélectionnez <code>/docs</code> 3. Cliquez <strong>Save</strong></p>
+<p>GitHub devrait ensuite afficher : ✅ “Your site is live at https://stockastats.github.io/”</p>
+</section>
+<section id="workflow-de-publication-avec-quarto" class="level3">
+<h3 class="anchored" data-anchor-id="workflow-de-publication-avec-quarto">4️⃣ Workflow de publication avec Quarto</h3>
+<p>Une fois Quarto installé, pour ajouter des articles :</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb3"><pre class="sourceCode powershell code-with-copy"><code class="sourceCode powershell"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Importer un article</span></span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="op">.</span>\scripts\import-article<span class="op">.</span><span class="fu">ps1</span> `</span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>  <span class="op">-</span>SourceFile <span class="st">"C:\chemin\vers\article.md"</span> `</span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a>  <span class="op">-</span>Slug <span class="st">"nom-article"</span> `</span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a>  <span class="op">-</span>Title <span class="st">"Titre de l'article"</span> `</span>
+<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a>  <span class="op">-</span>Description <span class="st">"Description courte"</span></span>
+<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a><span class="co"># Générer le site HTML</span></span>
+<span id="cb3-9"><a href="#cb3-9" aria-hidden="true" tabindex="-1"></a>quarto render</span>
+<span id="cb3-10"><a href="#cb3-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-11"><a href="#cb3-11" aria-hidden="true" tabindex="-1"></a><span class="co"># Pousser vers GitHub</span></span>
+<span id="cb3-12"><a href="#cb3-12" aria-hidden="true" tabindex="-1"></a>git add docs<span class="op">/</span></span>
+<span id="cb3-13"><a href="#cb3-13" aria-hidden="true" tabindex="-1"></a>git commit <span class="op">-</span>m <span class="st">"feat: ajout article 'nom-article'"</span></span>
+<span id="cb3-14"><a href="#cb3-14" aria-hidden="true" tabindex="-1"></a>git push origin main</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</section>
+</section>
+<section id="personnalisation" class="level2">
+<h2 class="anchored" data-anchor-id="personnalisation">🎨 Personnalisation</h2>
+<p>Le design utilise actuellement des couleurs fixes (<code>#2c5aa0</code>). Pour personnaliser : - Modifiez <code>styles.css</code> pour les styles globaux - Éditez le <code>_quarto.yml</code> pour la configuration Quarto - Les fichiers <code>.qmd</code> (Quarto Markdown) se convertiront automatiquement en HTML avec <code>quarto render</code></p>
+</section>
+<section id="dépannage" class="level2">
+<h2 class="anchored" data-anchor-id="dépannage">❓ Dépannage</h2>
+<section id="error-404-sur-le-site" class="level3">
+<h3 class="anchored" data-anchor-id="error-404-sur-le-site">“Error 404” sur le site</h3>
+<p>→ Les fichiers HTML ne sont pas visibles. Vérifiez que : - Les fichiers sont bien dans <code>/docs</code> - GitHub Pages est configuré pour <code>/docs</code> - Attendez 2-3 minutes après le push (GitHub Pages a besoin de temps pour déployer)</p>
+</section>
+<section id="quarto-command-not-found" class="level3">
+<h3 class="anchored" data-anchor-id="quarto-command-not-found">Quarto: command not found</h3>
+<p>→ Quarto n’est pas installé ou pas dans le PATH. Réinstallez-le depuis https://quarto.org/</p>
+</section>
+</section>
+<section id="ressources" class="level2">
+<h2 class="anchored" data-anchor-id="ressources">📚 Ressources</h2>
+<ul>
+<li>Documentation Quarto : https://quarto.org/docs/</li>
+<li>Configuration Quarto websites : https://quarto.org/docs/websites/</li>
+<li>GitHub Pages : https://docs.github.com/en/pages</li>
+</ul>
 
-</div>
-<div class="listing-no-matching d-none">No matching items</div>
-</div></main> <!-- /main -->
+
+</section>
+</section>
+
+</main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     const icon = "";

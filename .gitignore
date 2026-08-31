@@ -34,3 +34,6 @@ package-lock.json
 
 # Ne pas ignorer le dossier docs (output du site)
 # Les fichiers générés par Quarto doivent être poussés sur GitHub Pages
+
+/.quarto/
+**/*.quarto_ipynb

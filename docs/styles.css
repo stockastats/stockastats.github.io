@@ -1,0 +1,21 @@
+:root {
+  --brand: #0b6e4f;
+  --brand-soft: #e8f5ef;
+  --ink: #1f2937;
+}
+
+body {
+  color: var(--ink);
+}
+
+.navbar {
+  border-bottom: 2px solid var(--brand-soft);
+}
+
+h1, h2, h3 {
+  color: var(--brand);
+}
+
+.listing-description {
+  opacity: 0.9;
+}

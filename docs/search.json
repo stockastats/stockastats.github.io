@@ -1,0 +1,65 @@
+[
+  {
+    "objectID": "INSTALLATION.html",
+    "href": "INSTALLATION.html",
+    "title": "🚀 Guide de Configuration - StockaStats GitHub Pages",
+    "section": "",
+    "text": "✅ Site HTML de base créé dans docs/\n✅ Pages structurées (Accueil + Articles)\n✅ Navigation et design appliqués\n✅ Fichier .gitignore configuré\n\n\n\n\n\n\nLe système Quarto n’est pas encore installé sur votre machine. Pour un fonctionnement complet :\n\nRendez-vous sur : https://quarto.org/docs/get-started/\nTéléchargez l’installeur Windows (.msi)\nLancez l’installation en double-cliquant le fichier\nSuivez l’assistant d’installation par défaut\n\nAprès l’installation, testez dans PowerShell :\nquarto --version\n\n\n\ncd \"C:\\Users\\GPNBO\\Code\\stockastats.github.io\"\n\n# Ajouter les nouveaux fichiers\ngit add docs/\ngit add .gitignore\n\n# Créer un commit\ngit commit -m \"feat: site HTML initial avec navigation et sommaire\"\n\n# Pousser vers GitHub\ngit push origin main\n\n\n\nSur GitHub.com : 1. Allez dans Settings → Pages 2. Sous “Build and deployment” : - Source : Deploy from a branch - Branch : Sélectionnez main - Folder : Sélectionnez /docs 3. Cliquez Save\nGitHub devrait ensuite afficher : ✅ “Your site is live at https://stockastats.github.io/”\n\n\n\nUne fois Quarto installé, pour ajouter des articles :\n# Importer un article\n.\\scripts\\import-article.ps1 `\n  -SourceFile \"C:\\chemin\\vers\\article.md\" `\n  -Slug \"nom-article\" `\n  -Title \"Titre de l'article\" `\n  -Description \"Description courte\"\n\n# Générer le site HTML\nquarto render\n\n# Pousser vers GitHub\ngit add docs/\ngit commit -m \"feat: ajout article 'nom-article'\"\ngit push origin main\n\n\n\n\nLe design utilise actuellement des couleurs fixes (#2c5aa0). Pour personnaliser : - Modifiez styles.css pour les styles globaux - Éditez le _quarto.yml pour la configuration Quarto - Les fichiers .qmd (Quarto Markdown) se convertiront automatiquement en HTML avec quarto render\n\n\n\n\n\n→ Les fichiers HTML ne sont pas visibles. Vérifiez que : - Les fichiers sont bien dans /docs - GitHub Pages est configuré pour /docs - Attendez 2-3 minutes après le push (GitHub Pages a besoin de temps pour déployer)\n\n\n\n→ Quarto n’est pas installé ou pas dans le PATH. Réinstallez-le depuis https://quarto.org/\n\n\n\n\n\nDocumentation Quarto : https://quarto.org/docs/\nConfiguration Quarto websites : https://quarto.org/docs/websites/\nGitHub Pages : https://docs.github.com/en/pages"
+  },
+  {
+    "objectID": "INSTALLATION.html#étapes-complétées",
+    "href": "INSTALLATION.html#étapes-complétées",
+    "title": "🚀 Guide de Configuration - StockaStats GitHub Pages",
+    "section": "",
+    "text": "✅ Site HTML de base créé dans docs/\n✅ Pages structurées (Accueil + Articles)\n✅ Navigation et design appliqués\n✅ Fichier .gitignore configuré"
+  },
+  {
+    "objectID": "INSTALLATION.html#prochaines-étapes",
+    "href": "INSTALLATION.html#prochaines-étapes",
+    "title": "🚀 Guide de Configuration - StockaStats GitHub Pages",
+    "section": "",
+    "text": "Le système Quarto n’est pas encore installé sur votre machine. Pour un fonctionnement complet :\n\nRendez-vous sur : https://quarto.org/docs/get-started/\nTéléchargez l’installeur Windows (.msi)\nLancez l’installation en double-cliquant le fichier\nSuivez l’assistant d’installation par défaut\n\nAprès l’installation, testez dans PowerShell :\nquarto --version\n\n\n\ncd \"C:\\Users\\GPNBO\\Code\\stockastats.github.io\"\n\n# Ajouter les nouveaux fichiers\ngit add docs/\ngit add .gitignore\n\n# Créer un commit\ngit commit -m \"feat: site HTML initial avec navigation et sommaire\"\n\n# Pousser vers GitHub\ngit push origin main\n\n\n\nSur GitHub.com : 1. Allez dans Settings → Pages 2. Sous “Build and deployment” : - Source : Deploy from a branch - Branch : Sélectionnez main - Folder : Sélectionnez /docs 3. Cliquez Save\nGitHub devrait ensuite afficher : ✅ “Your site is live at https://stockastats.github.io/”\n\n\n\nUne fois Quarto installé, pour ajouter des articles :\n# Importer un article\n.\\scripts\\import-article.ps1 `\n  -SourceFile \"C:\\chemin\\vers\\article.md\" `\n  -Slug \"nom-article\" `\n  -Title \"Titre de l'article\" `\n  -Description \"Description courte\"\n\n# Générer le site HTML\nquarto render\n\n# Pousser vers GitHub\ngit add docs/\ngit commit -m \"feat: ajout article 'nom-article'\"\ngit push origin main"
+  },
+  {
+    "objectID": "INSTALLATION.html#personnalisation",
+    "href": "INSTALLATION.html#personnalisation",
+    "title": "🚀 Guide de Configuration - StockaStats GitHub Pages",
+    "section": "",
+    "text": "Le design utilise actuellement des couleurs fixes (#2c5aa0). Pour personnaliser : - Modifiez styles.css pour les styles globaux - Éditez le _quarto.yml pour la configuration Quarto - Les fichiers .qmd (Quarto Markdown) se convertiront automatiquement en HTML avec quarto render"
+  },
+  {
+    "objectID": "INSTALLATION.html#dépannage",
+    "href": "INSTALLATION.html#dépannage",
+    "title": "🚀 Guide de Configuration - StockaStats GitHub Pages",
+    "section": "",
+    "text": "→ Les fichiers HTML ne sont pas visibles. Vérifiez que : - Les fichiers sont bien dans /docs - GitHub Pages est configuré pour /docs - Attendez 2-3 minutes après le push (GitHub Pages a besoin de temps pour déployer)\n\n\n\n→ Quarto n’est pas installé ou pas dans le PATH. Réinstallez-le depuis https://quarto.org/"
+  },
+  {
+    "objectID": "INSTALLATION.html#ressources",
+    "href": "INSTALLATION.html#ressources",
+    "title": "🚀 Guide de Configuration - StockaStats GitHub Pages",
+    "section": "",
+    "text": "Documentation Quarto : https://quarto.org/docs/\nConfiguration Quarto websites : https://quarto.org/docs/websites/\nGitHub Pages : https://docs.github.com/en/pages"
+  },
+  {
+    "objectID": "articles/index.html",
+    "href": "articles/index.html",
+    "title": "Articles",
+    "section": "",
+    "text": "Tous les articles importes apparaissent ci-dessous.\n\n\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Bienvenue",
+    "section": "",
+    "text": "Ce site Quarto centralise des articles venant d’autres depots Git.\n\n\n\nCloner un depot source localement.\nRecuperer un fichier Markdown/Quarto a publier.\nL’importer dans articles/ avec le script d’import.\nLancer quarto render.\nPousser le dossier docs/ sur main pour GitHub Pages."
+  },
+  {
+    "objectID": "index.html#workflow-rapide",
+    "href": "index.html#workflow-rapide",
+    "title": "Bienvenue",
+    "section": "",
+    "text": "Cloner un depot source localement.\nRecuperer un fichier Markdown/Quarto a publier.\nL’importer dans articles/ avec le script d’import.\nLancer quarto render.\nPousser le dossier docs/ sur main pour GitHub Pages."
+  }
+]
