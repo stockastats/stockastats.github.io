@@ -4,6 +4,7 @@ project:
 
 website:
   title: "StockaStats"
+  site-url: https://aaudes.github.io/stockastats.github.io
   navbar:
     left:
       - text: "Accueil"
