@@ -67,7 +67,7 @@
     "href": "articles/index.html",
     "title": "Articles",
     "section": "",
-    "text": "Tous les articles importes apparaissent ci-dessous.\n\n\n\n\n\n\n\n\n\nLes prénoms unisexes mais pas trop\n\n\nAnalyse des prénoms donnés aux deux sexes en France depuis 1900 : ratios, fréquences et évolutions surprenantes au fil du temps.\n\n\n\n\n\nAug 31, 2026\n\n\n\n\n\nNo matching items"
+    "text": "Tous les articles importes apparaissent ci-dessous.\n\n\n\n\n\n\n\n\n\nEt si on accrochait Spotify a la Tour Eiffel ?\n\n\nOn prend tout ce que la France ecoute sur Spotify en une journee, on le diffuse sur des enceintes accrochees a la Tour Eiffel, et on observe les consequences acoustiques, immobilieres et structurelles.\n\n\n\n\n\nSep 1, 2026\n\n\n\n\n\n\n\nLes prénoms unisexes mais pas trop\n\n\nAnalyse des prénoms donnés aux deux sexes en France depuis 1900 : ratios, fréquences et évolutions surprenantes au fil du temps.\n\n\n\n\n\nAug 31, 2026\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "index.html",
@@ -82,5 +82,82 @@
     "title": "Bienvenue",
     "section": "",
     "text": "Cloner un depot source localement.\nRecuperer un fichier Markdown/Quarto a publier.\nL’importer dans articles/ avec le script d’import.\nLancer quarto render.\nPousser le dossier docs/ sur main pour GitHub Pages."
+  },
+  {
+    "objectID": "articles/spotify-tour-eiffel/index.html",
+    "href": "articles/spotify-tour-eiffel/index.html",
+    "title": "Et si on accrochait Spotify a la Tour Eiffel ?",
+    "section": "",
+    "text": "On connait le temps d’ecoute annuel de Spotify en France : des millions d’heures de musique chaque jour. Mais que se passerait-il si on rendait tout ca physiquement audible ? Si on accrochait a la Tour Eiffel suffisamment d’enceintes pour diffuser en continu, 24h/24, la totalite de ce qui est ecoute en France sur Spotify ?\nC’est l’experience de pensee que l’on se propose de mener ici, etape par etape, en suivant la physique la ou elle nous mene."
+  },
+  {
+    "objectID": "articles/spotify-tour-eiffel/index.html#combien-denceintes-sur-la-tour-eiffel",
+    "href": "articles/spotify-tour-eiffel/index.html#combien-denceintes-sur-la-tour-eiffel",
+    "title": "Et si on accrochait Spotify a la Tour Eiffel ?",
+    "section": "Combien d’enceintes sur la Tour Eiffel ?",
+    "text": "Combien d’enceintes sur la Tour Eiffel ?\n\nLe temps d’ecoute Spotify en France\nSpotify compte environ 24 millions d’utilisateurs actifs mensuels en France. Chaque utilisateur ecoute en moyenne 30 minutes par jour. Cela represente :\n\n12 millions d’heures d’ecoute par jour\nsoit 4,4 milliards d’heures par an\n\nPour diffuser l’integralite de ces ecoutes en continu sur 24 heures, il faut autant de flux simultanes que d’heures divisees par 24 : environ 500 000 flux simultanes.\nChaque flux necessite une enceinte. On choisit un modele modeste : 2 watts par enceinte.\n\n\nLa puissance totale\nAvec 500 000 enceintes de 2W, on obtient une puissance acoustique totale de 1 000 000 watts – soit un million de watts, ou encore 20 fois la puissance d’un concert rock geant.\n\n\nEst-ce que ca rentre sur la Tour Eiffel ?\nChaque enceinte occupe environ 10 x 10 cm. La structure metallique de la Tour Eiffel offre environ 25 000 m² de surface. Les 500 000 enceintes necessitent 5 000 m² : ca rentre, on n’utilise que 20% de la surface disponible. Cote poids, les 75 tonnes d’enceintes representent a peine 1% du poids de la tour (7 300 tonnes). La faisabilite physique n’est pas le probleme.\nLe probleme, c’est le bruit."
+  },
+  {
+    "objectID": "articles/spotify-tour-eiffel/index.html#lintensite-sonore-un-mur-de-son",
+    "href": "articles/spotify-tour-eiffel/index.html#lintensite-sonore-un-mur-de-son",
+    "title": "Et si on accrochait Spotify a la Tour Eiffel ?",
+    "section": "L’intensite sonore : un mur de son",
+    "text": "L’intensite sonore : un mur de son\n\nLe modele\nOn modelise la Tour Eiffel comme une source ponctuelle omnidirectionnelle. L’intensite sonore decroit en \\(1/r^2\\) (loi de l’inverse du carre) :\n\\[L(r) = 10 \\cdot \\log_{10}\\left(\\frac{P_{total}}{4\\pi r^2 \\cdot I_0}\\right) \\quad \\text{avec } I_0 = 10^{-12} \\text{ W/m}^2\\]\n\n\nLes resultats\n\n\n\nLieu\nDistance\nNiveau sonore\n\n\n\n\nPied de la Tour\n50 m\n~147 dB\n\n\nTrocadero\n500 m\n~127 dB\n\n\nArc de Triomphe\n3 km\n~111 dB\n\n\nPeripherique\n6 km\n~105 dB\n\n\nVersailles\n17 km\n~96 dB\n\n\n\nAu pied de la Tour, on depasse la rupture du tympan (150 dB). Au Trocadero, c’est au-dessus du seuil de douleur. A l’Arc de Triomphe, c’est l’equivalent d’un concert a pleine puissance – en continu. Meme au peripherique, le niveau reste dangereux pour l’audition.\n\n\nAttenuation avec la distance\n\n\n\nAttenuation du niveau sonore en fonction de la distance a la Tour Eiffel\n\n\nIl faut s’eloigner a pres de 20 km de la Tour pour retrouver un niveau comparable a celui d’une conversation normale (60 dB). Paris intra-muros est, en entier, au-dessus du seuil de danger."
+  },
+  {
+    "objectID": "articles/spotify-tour-eiffel/index.html#limmobilier-parisien-seffondre",
+    "href": "articles/spotify-tour-eiffel/index.html#limmobilier-parisien-seffondre",
+    "title": "Et si on accrochait Spotify a la Tour Eiffel ?",
+    "section": "L’immobilier parisien s’effondre",
+    "text": "L’immobilier parisien s’effondre\n\nLe modele de depreciation\nLes etudes economiques montrent qu’une augmentation du bruit au-dela de 55 dB entraine une depreciation d’environ 0,9% par decibel supplementaire sur les prix immobiliers. Au-dela de 100 dB, on considere un bien comme inhabitable : sa valeur tombe a zero.\n\n\nLe resultat\n\n\n\nPrix immobilier reel vs prix avec le bruit de Spotify sur la Tour Eiffel\n\n\nTous les arrondissements de Paris deviennent inhabitables ou presque. Les beaux quartiers du 7e, 16e et 6e – parmi les plus chers de France – voient leur valeur tomber a zero. Meme en banlieue proche, les prix s’effondrent de 30 a 80%.\n\n\n\nDepreciation en pourcentage du prix immobilier\n\n\nSeules les communes situees a plus de 20 km conservent l’essentiel de leur valeur. Versailles, malgre ses 17 km de distance, subit encore une perte significative."
+  },
+  {
+    "objectID": "articles/spotify-tour-eiffel/index.html#la-tour-eiffel-juke-box-geant",
+    "href": "articles/spotify-tour-eiffel/index.html#la-tour-eiffel-juke-box-geant",
+    "title": "Et si on accrochait Spotify a la Tour Eiffel ?",
+    "section": "La Tour Eiffel, juke-box geant",
+    "text": "La Tour Eiffel, juke-box geant\n\nRepartition par genre musical\nOn ne se contente pas de diffuser du bruit blanc : on respecte les proportions reelles d’ecoute Spotify en France. Chaque genre se voit attribuer un quadrant de la Tour Eiffel, proportionnel a sa part d’ecoute.\n\n\n\nRepartition des ecoutes Spotify France par genre\n\n\nLe rap/hip-hop et la pop dominent largement, suivis du rock et de l’electro. Le metal represente 5% des ecoutes, le classique 4%.\n\n\nLes quadrants de la Tour\n\n\n\nVue du dessus : chaque secteur de la Tour emet un genre\n\n\nChaque secteur angulaire de la Tour Eiffel diffuse un genre different. La puissance emise dans chaque direction est proportionnelle a la part d’ecoute du genre."
+  },
+  {
+    "objectID": "articles/spotify-tour-eiffel/index.html#le-son-nest-pas-le-meme-dans-toutes-les-directions",
+    "href": "articles/spotify-tour-eiffel/index.html#le-son-nest-pas-le-meme-dans-toutes-les-directions",
+    "title": "Et si on accrochait Spotify a la Tour Eiffel ?",
+    "section": "Le son n’est pas le meme dans toutes les directions",
+    "text": "Le son n’est pas le meme dans toutes les directions\n\nLes profils frequentiels\nChaque genre musical a un profil frequentiel different. Le metal et le rap ont beaucoup d’energie dans les basses frequences (&lt; 200 Hz), tandis que le classique et le jazz sont davantage concentres dans les mediums et les aigus.\n\n\n\nSpectres frequentiels typiques par genre\n\n\n\n\nL’absorption atmospherique\nC’est la ou les choses deviennent asymetriques. L’air absorbe les sons differemment selon leur frequence :\n\nA 100 Hz (basses) : seulement 0,2 dB/km d’absorption\nA 1 000 Hz (mediums) : 2,8 dB/km\nA 8 000 Hz (aigus) : 25 dB/km\n\n\n\n\nAbsorption atmospherique en fonction de la frequence\n\n\nLes basses frequences traversent l’air presque sans perte. Les aigus sont absorbes tres rapidement. Consequence : le son du metal et du rap porte beaucoup plus loin que celui du classique ou du jazz.\n\n\nNiveau sonore par genre, avec absorption\n\n\n\nNiveau sonore par genre en tenant compte de l’absorption atmospherique\n\n\nA 10 km, le quadrant metal est encore au-dessus de 85 dB (dangereux), tandis que le quadrant classique est deja retombe sous les 70 dB. La zone de danger n’est pas un cercle : c’est une forme asymetrique, etiree dans la direction des basses frequences."
+  },
+  {
+    "objectID": "articles/spotify-tour-eiffel/index.html#meme-les-sourds-ne-sont-pas-a-labri",
+    "href": "articles/spotify-tour-eiffel/index.html#meme-les-sourds-ne-sont-pas-a-labri",
+    "title": "Et si on accrochait Spotify a la Tour Eiffel ?",
+    "section": "Meme les sourds ne sont pas a l’abri",
+    "text": "Meme les sourds ne sont pas a l’abri\n\nLa pression acoustique et les vibrations\nLes personnes sourdes n’entendent pas le son par l’oreille. Mais les basses frequences ne sont pas qu’un phenomene auditif : ce sont des ondes de pression qui font vibrer les murs, les planchers, et le corps humain.\n\n\n\nPression acoustique par genre\n\n\nA partir de 110 dB dans les basses frequences, les vibrations sont ressenties physiquement. Les sourds ne pourraient donc pas vivre tranquillement dans le quadrant metal ou rap, meme s’ils n’entendent rien.\n\n\nDes immeubles qui s’effondrent\nLes basses frequences sont particulierement destructrices pour les batiments. Les longueurs d’onde sont comparables aux dimensions des structures, ce qui peut provoquer des resonances :\n\n140 dB : fissures dans le platre\n150 dB : fenetres brisees, structures legeres endommagees\n160 dB : dommages structurels serieux\n170 dB : effondrement de maconnerie\n\nLe quadrant metal, avec ses 80 Hz dominants, provoquerait des degats structurels sur plusieurs kilometres. Le quadrant classique, avec ses frequences plus hautes, verrait ses vibrations absorbees beaucoup plus vite.\nEn revanche, cote classique et jazz, les vibrations s’attenuent bien plus rapidement. Un sourd pourrait theoriquement habiter plus pres de la Tour dans cette direction – a condition que l’immeuble tienne debout."
+  },
+  {
+    "objectID": "articles/spotify-tour-eiffel/index.html#la-carte-de-paris-deformee-par-la-musique",
+    "href": "articles/spotify-tour-eiffel/index.html#la-carte-de-paris-deformee-par-la-musique",
+    "title": "Et si on accrochait Spotify a la Tour Eiffel ?",
+    "section": "La carte de Paris, deformee par la musique",
+    "text": "La carte de Paris, deformee par la musique\n\nZone de danger (&gt; 85 dB)\nLa carte suivante montre, pour chaque direction, la distance a laquelle le niveau sonore reste dangereux (&gt; 85 dB). La forme est asymetrique : les genres a basses frequences (metal, rap, electro) projettent le danger beaucoup plus loin.\n\n\n\nZone dangereuse par direction et genre, sur fond de carte Paris\n\n\n\n\nZone invivable pour les sourds\nEn ne regardant que les vibrations basses frequences (&gt; 110 dB), on obtient une carte tres differente. Seuls les genres a basses frequences creent des zones d’exclusion significatives.\n\n\n\nZone invivable pour les sourds, vibrations basses frequences\n\n\n\n\nVue d’ensemble : Paris sous le bruit\n\n\n\nParis : cercles d’impact sonore autour de la Tour Eiffel"
+  },
+  {
+    "objectID": "articles/spotify-tour-eiffel/index.html#et-dans-dautres-villes",
+    "href": "articles/spotify-tour-eiffel/index.html#et-dans-dautres-villes",
+    "title": "Et si on accrochait Spotify a la Tour Eiffel ?",
+    "section": "Et dans d’autres villes ?",
+    "text": "Et dans d’autres villes ?\nLe modele est parametrable. En changeant le nombre d’utilisateurs et le monument, on peut reproduire l’experience pour n’importe quelle ville. A titre d’exemple :\n\n\n\nLyon : zones d’impact depuis la Basilique de Fourviere\n\n\n\n\n\nMarseille : zones d’impact depuis Notre-Dame de la Garde\n\n\nAvec moins d’utilisateurs, la puissance est moindre – mais les centres-villes restent largement inhabitables."
+  },
+  {
+    "objectID": "articles/spotify-tour-eiffel/index.html#en-resume",
+    "href": "articles/spotify-tour-eiffel/index.html#en-resume",
+    "title": "Et si on accrochait Spotify a la Tour Eiffel ?",
+    "section": "En resume",
+    "text": "En resume\n\n\n\n\nValeur\n\n\n\n\nEcoute Spotify France / jour\n12 000 000 heures\n\n\nFlux simultanes\n500 000\n\n\nEnceintes 2W\n500 000\n\n\nPuissance totale\n1 000 000 W\n\n\nSeuil de douleur atteint a\n~1 km\n\n\nSeuil de danger atteint a\n~15 km\n\n\nConversation normale a\n~50 km\n\n\n\nParis est entierement inhabitable. L’immobilier s’effondre. Les sourds sont epargnes cote classique mais pas cote metal. Et la Tour Eiffel, elle, tient le coup."
+  },
+  {
+    "objectID": "articles/spotify-tour-eiffel/index.html#sources",
+    "href": "articles/spotify-tour-eiffel/index.html#sources",
+    "title": "Et si on accrochait Spotify a la Tour Eiffel ?",
+    "section": "Sources",
+    "text": "Sources\nSpotify et ecoute musicale :\n\nSpotify Company Info & Earnings Reports — newsroom.spotify.com\nSNEP, Bilan du marche de la musique — snepmusique.com\nBusiness of Apps, Spotify Statistics — businessofapps.com\nIFPI Global Music Report 2024 — ifpi.org\n\nAcoustique et propagation du son :\n\nISO 9613-1:1993, Attenuation of sound during propagation outdoors\nOMS, Guidelines for Community Noise (1999)\nINRS, Bruit en milieu de travail — inrs.fr\nKinsler et al., Fundamentals of Acoustics, Wiley (2000)\n\nDommages structurels :\n\nNASA Technical Report CR-1780, Sonic Boom Damage to Buildings (1971)\nBachmann et al., Vibration Problems in Structures, Birkhauser (1995)\n\nPerception vibrotactile (sourds) :\n\nVerrillo R.T., Vibration Sensation in Humans, Music Perception (1992)\nRusso F.A. et al., Vibrotactile perception of musical pitch (2012)\n\nImmobilier et bruit :\n\nNotaires de Paris, base BIEN — paris.notaires.fr\nMeilleursAgents — meilleursagents.com\nINSEE / DVF — app.dvf.etalab.gouv.fr\nADEME, Cout social du bruit en France (2021)\nNelson J.P., Meta-analysis of airport noise and hedonic property values, JTEP (2004)\nTheebe M.A.J., The Impact of Traffic Noise on House Prices, JREFE (2004)\n\nProfils frequentiels :\n\nTzanetakis G. & Cook P., Musical Genre Classification of Audio Signals, IEEE (2002)\nPeeters G., A large set of audio features for sound description, IRCAM (2004)\n\nTour Eiffel :\n\nSite officiel — toureiffel.paris\n\nCode source : disponible sur GitHub."
   }
 ]

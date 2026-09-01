@@ -1,0 +1,987 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.10.18">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="dcterms.date" content="2026-09-01">
+<meta name="description" content="On prend tout ce que la France ecoute sur Spotify en une journee, on le diffuse sur des enceintes accrochees a la Tour Eiffel, et on observe les consequences acoustiques, immobilieres et structurelles.">
+
+<title>Et si on accrochait Spotify a la Tour Eiffel ? – StockaStats</title>
+<style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: 1.5em;}
+div.column{flex: auto;}
+@media screen {
+div.columns{gap: min(4vw, 1.5em);}
+div.column{overflow-x: auto;}
+}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap-0c993683fdd6a26c1aa2f976085b22ef.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-chtml.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+<link rel="stylesheet" href="../../styles.css">
+</head>
+
+<body class="nav-fixed quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a class="navbar-brand" href="../../index.html">
+    <span class="navbar-title">StockaStats</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../../index.html"> 
+<span class="menu-text">Accueil</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../articles/index.html"> 
+<span class="menu-text">Articles</span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#combien-denceintes-sur-la-tour-eiffel" id="toc-combien-denceintes-sur-la-tour-eiffel" class="nav-link active" data-scroll-target="#combien-denceintes-sur-la-tour-eiffel">Combien d’enceintes sur la Tour Eiffel ?</a>
+  <ul class="collapse">
+  <li><a href="#le-temps-decoute-spotify-en-france" id="toc-le-temps-decoute-spotify-en-france" class="nav-link" data-scroll-target="#le-temps-decoute-spotify-en-france">Le temps d’ecoute Spotify en France</a></li>
+  <li><a href="#la-puissance-totale" id="toc-la-puissance-totale" class="nav-link" data-scroll-target="#la-puissance-totale">La puissance totale</a></li>
+  <li><a href="#est-ce-que-ca-rentre-sur-la-tour-eiffel" id="toc-est-ce-que-ca-rentre-sur-la-tour-eiffel" class="nav-link" data-scroll-target="#est-ce-que-ca-rentre-sur-la-tour-eiffel">Est-ce que ca rentre sur la Tour Eiffel ?</a></li>
+  </ul></li>
+  <li><a href="#lintensite-sonore-un-mur-de-son" id="toc-lintensite-sonore-un-mur-de-son" class="nav-link" data-scroll-target="#lintensite-sonore-un-mur-de-son">L’intensite sonore : un mur de son</a>
+  <ul class="collapse">
+  <li><a href="#le-modele" id="toc-le-modele" class="nav-link" data-scroll-target="#le-modele">Le modele</a></li>
+  <li><a href="#les-resultats" id="toc-les-resultats" class="nav-link" data-scroll-target="#les-resultats">Les resultats</a></li>
+  <li><a href="#attenuation-avec-la-distance" id="toc-attenuation-avec-la-distance" class="nav-link" data-scroll-target="#attenuation-avec-la-distance">Attenuation avec la distance</a></li>
+  </ul></li>
+  <li><a href="#limmobilier-parisien-seffondre" id="toc-limmobilier-parisien-seffondre" class="nav-link" data-scroll-target="#limmobilier-parisien-seffondre">L’immobilier parisien s’effondre</a>
+  <ul class="collapse">
+  <li><a href="#le-modele-de-depreciation" id="toc-le-modele-de-depreciation" class="nav-link" data-scroll-target="#le-modele-de-depreciation">Le modele de depreciation</a></li>
+  <li><a href="#le-resultat" id="toc-le-resultat" class="nav-link" data-scroll-target="#le-resultat">Le resultat</a></li>
+  </ul></li>
+  <li><a href="#la-tour-eiffel-juke-box-geant" id="toc-la-tour-eiffel-juke-box-geant" class="nav-link" data-scroll-target="#la-tour-eiffel-juke-box-geant">La Tour Eiffel, juke-box geant</a>
+  <ul class="collapse">
+  <li><a href="#repartition-par-genre-musical" id="toc-repartition-par-genre-musical" class="nav-link" data-scroll-target="#repartition-par-genre-musical">Repartition par genre musical</a></li>
+  <li><a href="#les-quadrants-de-la-tour" id="toc-les-quadrants-de-la-tour" class="nav-link" data-scroll-target="#les-quadrants-de-la-tour">Les quadrants de la Tour</a></li>
+  </ul></li>
+  <li><a href="#le-son-nest-pas-le-meme-dans-toutes-les-directions" id="toc-le-son-nest-pas-le-meme-dans-toutes-les-directions" class="nav-link" data-scroll-target="#le-son-nest-pas-le-meme-dans-toutes-les-directions">Le son n’est pas le meme dans toutes les directions</a>
+  <ul class="collapse">
+  <li><a href="#les-profils-frequentiels" id="toc-les-profils-frequentiels" class="nav-link" data-scroll-target="#les-profils-frequentiels">Les profils frequentiels</a></li>
+  <li><a href="#labsorption-atmospherique" id="toc-labsorption-atmospherique" class="nav-link" data-scroll-target="#labsorption-atmospherique">L’absorption atmospherique</a></li>
+  <li><a href="#niveau-sonore-par-genre-avec-absorption" id="toc-niveau-sonore-par-genre-avec-absorption" class="nav-link" data-scroll-target="#niveau-sonore-par-genre-avec-absorption">Niveau sonore par genre, avec absorption</a></li>
+  </ul></li>
+  <li><a href="#meme-les-sourds-ne-sont-pas-a-labri" id="toc-meme-les-sourds-ne-sont-pas-a-labri" class="nav-link" data-scroll-target="#meme-les-sourds-ne-sont-pas-a-labri">Meme les sourds ne sont pas a l’abri</a>
+  <ul class="collapse">
+  <li><a href="#la-pression-acoustique-et-les-vibrations" id="toc-la-pression-acoustique-et-les-vibrations" class="nav-link" data-scroll-target="#la-pression-acoustique-et-les-vibrations">La pression acoustique et les vibrations</a></li>
+  <li><a href="#des-immeubles-qui-seffondrent" id="toc-des-immeubles-qui-seffondrent" class="nav-link" data-scroll-target="#des-immeubles-qui-seffondrent">Des immeubles qui s’effondrent</a></li>
+  </ul></li>
+  <li><a href="#la-carte-de-paris-deformee-par-la-musique" id="toc-la-carte-de-paris-deformee-par-la-musique" class="nav-link" data-scroll-target="#la-carte-de-paris-deformee-par-la-musique">La carte de Paris, deformee par la musique</a>
+  <ul class="collapse">
+  <li><a href="#zone-de-danger-85-db" id="toc-zone-de-danger-85-db" class="nav-link" data-scroll-target="#zone-de-danger-85-db">Zone de danger (&gt; 85 dB)</a></li>
+  <li><a href="#zone-invivable-pour-les-sourds" id="toc-zone-invivable-pour-les-sourds" class="nav-link" data-scroll-target="#zone-invivable-pour-les-sourds">Zone invivable pour les sourds</a></li>
+  <li><a href="#vue-densemble-paris-sous-le-bruit" id="toc-vue-densemble-paris-sous-le-bruit" class="nav-link" data-scroll-target="#vue-densemble-paris-sous-le-bruit">Vue d’ensemble : Paris sous le bruit</a></li>
+  </ul></li>
+  <li><a href="#et-dans-dautres-villes" id="toc-et-dans-dautres-villes" class="nav-link" data-scroll-target="#et-dans-dautres-villes">Et dans d’autres villes ?</a></li>
+  <li><a href="#en-resume" id="toc-en-resume" class="nav-link" data-scroll-target="#en-resume">En resume</a></li>
+  <li><a href="#sources" id="toc-sources" class="nav-link" data-scroll-target="#sources">Sources</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Et si on accrochait Spotify a la Tour Eiffel ?</h1>
+  <div class="quarto-categories">
+    <div class="quarto-category">acoustique</div>
+    <div class="quarto-category">Spotify</div>
+    <div class="quarto-category">experience de pensee</div>
+    <div class="quarto-category">immobilier</div>
+  </div>
+  </div>
+
+<div>
+  <div class="description">
+    On prend tout ce que la France ecoute sur Spotify en une journee, on le diffuse sur des enceintes accrochees a la Tour Eiffel, et on observe les consequences acoustiques, immobilieres et structurelles.
+  </div>
+</div>
+
+
+<div class="quarto-title-meta">
+
+    
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">September 1, 2026</p>
+    </div>
+  </div>
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<p>On connait le temps d’ecoute annuel de Spotify en France : des millions d’heures de musique chaque jour. Mais que se passerait-il si on rendait tout ca <strong>physiquement audible</strong> ? Si on accrochait a la Tour Eiffel suffisamment d’enceintes pour diffuser en continu, 24h/24, la totalite de ce qui est ecoute en France sur Spotify ?</p>
+<p>C’est l’experience de pensee que l’on se propose de mener ici, etape par etape, en suivant la physique la ou elle nous mene.</p>
+<section id="combien-denceintes-sur-la-tour-eiffel" class="level2">
+<h2 class="anchored" data-anchor-id="combien-denceintes-sur-la-tour-eiffel">Combien d’enceintes sur la Tour Eiffel ?</h2>
+<section id="le-temps-decoute-spotify-en-france" class="level3">
+<h3 class="anchored" data-anchor-id="le-temps-decoute-spotify-en-france">Le temps d’ecoute Spotify en France</h3>
+<p>Spotify compte environ <strong>24 millions d’utilisateurs actifs mensuels</strong> en France. Chaque utilisateur ecoute en moyenne <strong>30 minutes par jour</strong>. Cela represente :</p>
+<ul>
+<li><strong>12 millions d’heures</strong> d’ecoute par jour</li>
+<li>soit <strong>4,4 milliards d’heures</strong> par an</li>
+</ul>
+<p>Pour diffuser l’integralite de ces ecoutes en continu sur 24 heures, il faut autant de flux simultanes que d’heures divisees par 24 : environ <strong>500 000 flux simultanes</strong>.</p>
+<p>Chaque flux necessite une enceinte. On choisit un modele modeste : <strong>2 watts</strong> par enceinte.</p>
+</section>
+<section id="la-puissance-totale" class="level3">
+<h3 class="anchored" data-anchor-id="la-puissance-totale">La puissance totale</h3>
+<p>Avec 500 000 enceintes de 2W, on obtient une puissance acoustique totale de <strong>1 000 000 watts</strong> – soit un million de watts, ou encore <strong>20 fois</strong> la puissance d’un concert rock geant.</p>
+</section>
+<section id="est-ce-que-ca-rentre-sur-la-tour-eiffel" class="level3">
+<h3 class="anchored" data-anchor-id="est-ce-que-ca-rentre-sur-la-tour-eiffel">Est-ce que ca rentre sur la Tour Eiffel ?</h3>
+<p>Chaque enceinte occupe environ 10 x 10 cm. La structure metallique de la Tour Eiffel offre environ 25 000 m² de surface. Les 500 000 enceintes necessitent 5 000 m² : <strong>ca rentre</strong>, on n’utilise que 20% de la surface disponible. Cote poids, les 75 tonnes d’enceintes representent a peine 1% du poids de la tour (7 300 tonnes). La faisabilite physique n’est pas le probleme.</p>
+<p>Le probleme, c’est le bruit.</p>
+<hr>
+</section>
+</section>
+<section id="lintensite-sonore-un-mur-de-son" class="level2">
+<h2 class="anchored" data-anchor-id="lintensite-sonore-un-mur-de-son">L’intensite sonore : un mur de son</h2>
+<section id="le-modele" class="level3">
+<h3 class="anchored" data-anchor-id="le-modele">Le modele</h3>
+<p>On modelise la Tour Eiffel comme une <strong>source ponctuelle omnidirectionnelle</strong>. L’intensite sonore decroit en <span class="math inline">\(1/r^2\)</span> (loi de l’inverse du carre) :</p>
+<p><span class="math display">\[L(r) = 10 \cdot \log_{10}\left(\frac{P_{total}}{4\pi r^2 \cdot I_0}\right) \quad \text{avec } I_0 = 10^{-12} \text{ W/m}^2\]</span></p>
+</section>
+<section id="les-resultats" class="level3">
+<h3 class="anchored" data-anchor-id="les-resultats">Les resultats</h3>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Lieu</th>
+<th>Distance</th>
+<th>Niveau sonore</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Pied de la Tour</td>
+<td>50 m</td>
+<td>~147 dB</td>
+</tr>
+<tr class="even">
+<td>Trocadero</td>
+<td>500 m</td>
+<td>~127 dB</td>
+</tr>
+<tr class="odd">
+<td>Arc de Triomphe</td>
+<td>3 km</td>
+<td>~111 dB</td>
+</tr>
+<tr class="even">
+<td>Peripherique</td>
+<td>6 km</td>
+<td>~105 dB</td>
+</tr>
+<tr class="odd">
+<td>Versailles</td>
+<td>17 km</td>
+<td>~96 dB</td>
+</tr>
+</tbody>
+</table>
+<p>Au pied de la Tour, on depasse la <strong>rupture du tympan</strong> (150 dB). Au Trocadero, c’est au-dessus du <strong>seuil de douleur</strong>. A l’Arc de Triomphe, c’est l’equivalent d’un concert a pleine puissance – en continu. Meme au peripherique, le niveau reste dangereux pour l’audition.</p>
+</section>
+<section id="attenuation-avec-la-distance" class="level3">
+<h3 class="anchored" data-anchor-id="attenuation-avec-la-distance">Attenuation avec la distance</h3>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="graphe_attenuation_db.png" class="img-fluid figure-img"></p>
+<figcaption>Attenuation du niveau sonore en fonction de la distance a la Tour Eiffel</figcaption>
+</figure>
+</div>
+<p>Il faut s’eloigner a pres de <strong>20 km</strong> de la Tour pour retrouver un niveau comparable a celui d’une conversation normale (60 dB). Paris intra-muros est, en entier, au-dessus du seuil de danger.</p>
+<hr>
+</section>
+</section>
+<section id="limmobilier-parisien-seffondre" class="level2">
+<h2 class="anchored" data-anchor-id="limmobilier-parisien-seffondre">L’immobilier parisien s’effondre</h2>
+<section id="le-modele-de-depreciation" class="level3">
+<h3 class="anchored" data-anchor-id="le-modele-de-depreciation">Le modele de depreciation</h3>
+<p>Les etudes economiques montrent qu’une augmentation du bruit au-dela de 55 dB entraine une depreciation d’environ <strong>0,9% par decibel supplementaire</strong> sur les prix immobiliers. Au-dela de 100 dB, on considere un bien comme <strong>inhabitable</strong> : sa valeur tombe a zero.</p>
+</section>
+<section id="le-resultat" class="level3">
+<h3 class="anchored" data-anchor-id="le-resultat">Le resultat</h3>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="graphe_immobilier_prix.png" class="img-fluid figure-img"></p>
+<figcaption>Prix immobilier reel vs prix avec le bruit de Spotify sur la Tour Eiffel</figcaption>
+</figure>
+</div>
+<p>Tous les arrondissements de Paris deviennent inhabitables ou presque. Les beaux quartiers du 7e, 16e et 6e – parmi les plus chers de France – voient leur valeur tomber a <strong>zero</strong>. Meme en banlieue proche, les prix s’effondrent de 30 a 80%.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="graphe_immobilier_perte.png" class="img-fluid figure-img"></p>
+<figcaption>Depreciation en pourcentage du prix immobilier</figcaption>
+</figure>
+</div>
+<p>Seules les communes situees a plus de 20 km conservent l’essentiel de leur valeur. Versailles, malgre ses 17 km de distance, subit encore une perte significative.</p>
+<hr>
+</section>
+</section>
+<section id="la-tour-eiffel-juke-box-geant" class="level2">
+<h2 class="anchored" data-anchor-id="la-tour-eiffel-juke-box-geant">La Tour Eiffel, juke-box geant</h2>
+<section id="repartition-par-genre-musical" class="level3">
+<h3 class="anchored" data-anchor-id="repartition-par-genre-musical">Repartition par genre musical</h3>
+<p>On ne se contente pas de diffuser du bruit blanc : on respecte les proportions reelles d’ecoute Spotify en France. Chaque genre se voit attribuer un <strong>quadrant</strong> de la Tour Eiffel, proportionnel a sa part d’ecoute.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="graphe_genres.png" class="img-fluid figure-img"></p>
+<figcaption>Repartition des ecoutes Spotify France par genre</figcaption>
+</figure>
+</div>
+<p>Le rap/hip-hop et la pop dominent largement, suivis du rock et de l’electro. Le metal represente 5% des ecoutes, le classique 4%.</p>
+</section>
+<section id="les-quadrants-de-la-tour" class="level3">
+<h3 class="anchored" data-anchor-id="les-quadrants-de-la-tour">Les quadrants de la Tour</h3>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="graphe_quadrants.png" class="img-fluid figure-img"></p>
+<figcaption>Vue du dessus : chaque secteur de la Tour emet un genre</figcaption>
+</figure>
+</div>
+<p>Chaque secteur angulaire de la Tour Eiffel diffuse un genre different. La puissance emise dans chaque direction est proportionnelle a la part d’ecoute du genre.</p>
+<hr>
+</section>
+</section>
+<section id="le-son-nest-pas-le-meme-dans-toutes-les-directions" class="level2">
+<h2 class="anchored" data-anchor-id="le-son-nest-pas-le-meme-dans-toutes-les-directions">Le son n’est pas le meme dans toutes les directions</h2>
+<section id="les-profils-frequentiels" class="level3">
+<h3 class="anchored" data-anchor-id="les-profils-frequentiels">Les profils frequentiels</h3>
+<p>Chaque genre musical a un <strong>profil frequentiel</strong> different. Le metal et le rap ont beaucoup d’energie dans les basses frequences (&lt; 200 Hz), tandis que le classique et le jazz sont davantage concentres dans les mediums et les aigus.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="graphe_spectres.png" class="img-fluid figure-img"></p>
+<figcaption>Spectres frequentiels typiques par genre</figcaption>
+</figure>
+</div>
+</section>
+<section id="labsorption-atmospherique" class="level3">
+<h3 class="anchored" data-anchor-id="labsorption-atmospherique">L’absorption atmospherique</h3>
+<p>C’est la ou les choses deviennent asymetriques. L’air absorbe les sons differemment selon leur frequence :</p>
+<ul>
+<li>A <strong>100 Hz</strong> (basses) : seulement <strong>0,2 dB/km</strong> d’absorption</li>
+<li>A <strong>1 000 Hz</strong> (mediums) : <strong>2,8 dB/km</strong></li>
+<li>A <strong>8 000 Hz</strong> (aigus) : <strong>25 dB/km</strong></li>
+</ul>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="graphe_absorption.png" class="img-fluid figure-img"></p>
+<figcaption>Absorption atmospherique en fonction de la frequence</figcaption>
+</figure>
+</div>
+<p>Les basses frequences traversent l’air presque sans perte. Les aigus sont absorbes tres rapidement. Consequence : <strong>le son du metal et du rap porte beaucoup plus loin</strong> que celui du classique ou du jazz.</p>
+</section>
+<section id="niveau-sonore-par-genre-avec-absorption" class="level3">
+<h3 class="anchored" data-anchor-id="niveau-sonore-par-genre-avec-absorption">Niveau sonore par genre, avec absorption</h3>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="graphe_db_genre.png" class="img-fluid figure-img"></p>
+<figcaption>Niveau sonore par genre en tenant compte de l’absorption atmospherique</figcaption>
+</figure>
+</div>
+<p>A 10 km, le quadrant metal est encore au-dessus de 85 dB (dangereux), tandis que le quadrant classique est deja retombe sous les 70 dB. La zone de danger n’est pas un cercle : c’est une <strong>forme asymetrique</strong>, etiree dans la direction des basses frequences.</p>
+<hr>
+</section>
+</section>
+<section id="meme-les-sourds-ne-sont-pas-a-labri" class="level2">
+<h2 class="anchored" data-anchor-id="meme-les-sourds-ne-sont-pas-a-labri">Meme les sourds ne sont pas a l’abri</h2>
+<section id="la-pression-acoustique-et-les-vibrations" class="level3">
+<h3 class="anchored" data-anchor-id="la-pression-acoustique-et-les-vibrations">La pression acoustique et les vibrations</h3>
+<p>Les personnes sourdes n’entendent pas le son par l’oreille. Mais les basses frequences ne sont pas qu’un phenomene auditif : ce sont des <strong>ondes de pression</strong> qui font vibrer les murs, les planchers, et le corps humain.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="graphe_pression_genre.png" class="img-fluid figure-img"></p>
+<figcaption>Pression acoustique par genre</figcaption>
+</figure>
+</div>
+<p>A partir de <strong>110 dB</strong> dans les basses frequences, les vibrations sont ressenties physiquement. Les sourds ne pourraient donc pas vivre tranquillement dans le quadrant metal ou rap, meme s’ils n’entendent rien.</p>
+</section>
+<section id="des-immeubles-qui-seffondrent" class="level3">
+<h3 class="anchored" data-anchor-id="des-immeubles-qui-seffondrent">Des immeubles qui s’effondrent</h3>
+<p>Les basses frequences sont particulierement destructrices pour les batiments. Les longueurs d’onde sont comparables aux dimensions des structures, ce qui peut provoquer des <strong>resonances</strong> :</p>
+<ul>
+<li><strong>140 dB</strong> : fissures dans le platre</li>
+<li><strong>150 dB</strong> : fenetres brisees, structures legeres endommagees</li>
+<li><strong>160 dB</strong> : dommages structurels serieux</li>
+<li><strong>170 dB</strong> : effondrement de maconnerie</li>
+</ul>
+<p>Le quadrant metal, avec ses 80 Hz dominants, provoquerait des degats structurels sur plusieurs kilometres. Le quadrant classique, avec ses frequences plus hautes, verrait ses vibrations absorbees beaucoup plus vite.</p>
+<p>En revanche, cote classique et jazz, les vibrations s’attenuent bien plus rapidement. Un sourd pourrait theoriquement habiter plus pres de la Tour dans cette direction – a condition que l’immeuble tienne debout.</p>
+<hr>
+</section>
+</section>
+<section id="la-carte-de-paris-deformee-par-la-musique" class="level2">
+<h2 class="anchored" data-anchor-id="la-carte-de-paris-deformee-par-la-musique">La carte de Paris, deformee par la musique</h2>
+<section id="zone-de-danger-85-db" class="level3">
+<h3 class="anchored" data-anchor-id="zone-de-danger-85-db">Zone de danger (&gt; 85 dB)</h3>
+<p>La carte suivante montre, pour chaque direction, la distance a laquelle le niveau sonore reste dangereux (&gt; 85 dB). La forme est <strong>asymetrique</strong> : les genres a basses frequences (metal, rap, electro) projettent le danger beaucoup plus loin.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="carte_danger_85db.png" class="img-fluid figure-img"></p>
+<figcaption>Zone dangereuse par direction et genre, sur fond de carte Paris</figcaption>
+</figure>
+</div>
+</section>
+<section id="zone-invivable-pour-les-sourds" class="level3">
+<h3 class="anchored" data-anchor-id="zone-invivable-pour-les-sourds">Zone invivable pour les sourds</h3>
+<p>En ne regardant que les vibrations basses frequences (&gt; 110 dB), on obtient une carte tres differente. Seuls les genres a basses frequences creent des zones d’exclusion significatives.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="carte_sourds_110db.png" class="img-fluid figure-img"></p>
+<figcaption>Zone invivable pour les sourds, vibrations basses frequences</figcaption>
+</figure>
+</div>
+</section>
+<section id="vue-densemble-paris-sous-le-bruit" class="level3">
+<h3 class="anchored" data-anchor-id="vue-densemble-paris-sous-le-bruit">Vue d’ensemble : Paris sous le bruit</h3>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="carte_paris_impact.png" class="img-fluid figure-img"></p>
+<figcaption>Paris : cercles d’impact sonore autour de la Tour Eiffel</figcaption>
+</figure>
+</div>
+<hr>
+</section>
+</section>
+<section id="et-dans-dautres-villes" class="level2">
+<h2 class="anchored" data-anchor-id="et-dans-dautres-villes">Et dans d’autres villes ?</h2>
+<p>Le modele est parametrable. En changeant le nombre d’utilisateurs et le monument, on peut reproduire l’experience pour n’importe quelle ville. A titre d’exemple :</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="carte_lyon.png" class="img-fluid figure-img"></p>
+<figcaption>Lyon : zones d’impact depuis la Basilique de Fourviere</figcaption>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="carte_marseille.png" class="img-fluid figure-img"></p>
+<figcaption>Marseille : zones d’impact depuis Notre-Dame de la Garde</figcaption>
+</figure>
+</div>
+<p>Avec moins d’utilisateurs, la puissance est moindre – mais les centres-villes restent largement inhabitables.</p>
+<hr>
+</section>
+<section id="en-resume" class="level2">
+<h2 class="anchored" data-anchor-id="en-resume">En resume</h2>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th></th>
+<th>Valeur</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Ecoute Spotify France / jour</td>
+<td>12 000 000 heures</td>
+</tr>
+<tr class="even">
+<td>Flux simultanes</td>
+<td>500 000</td>
+</tr>
+<tr class="odd">
+<td>Enceintes 2W</td>
+<td>500 000</td>
+</tr>
+<tr class="even">
+<td>Puissance totale</td>
+<td>1 000 000 W</td>
+</tr>
+<tr class="odd">
+<td>Seuil de douleur atteint a</td>
+<td>~1 km</td>
+</tr>
+<tr class="even">
+<td>Seuil de danger atteint a</td>
+<td>~15 km</td>
+</tr>
+<tr class="odd">
+<td>Conversation normale a</td>
+<td>~50 km</td>
+</tr>
+</tbody>
+</table>
+<p>Paris est entierement inhabitable. L’immobilier s’effondre. Les sourds sont epargnes cote classique mais pas cote metal. Et la Tour Eiffel, elle, tient le coup.</p>
+<hr>
+</section>
+<section id="sources" class="level2">
+<h2 class="anchored" data-anchor-id="sources">Sources</h2>
+<p><strong>Spotify et ecoute musicale :</strong></p>
+<ul>
+<li>Spotify Company Info &amp; Earnings Reports — <a href="https://newsroom.spotify.com/company-info/">newsroom.spotify.com</a></li>
+<li>SNEP, Bilan du marche de la musique — <a href="https://www.snepmusique.com/les-chiffres/">snepmusique.com</a></li>
+<li>Business of Apps, Spotify Statistics — <a href="https://www.businessofapps.com/data/spotify-statistics/">businessofapps.com</a></li>
+<li>IFPI Global Music Report 2024 — <a href="https://www.ifpi.org/resources/">ifpi.org</a></li>
+</ul>
+<p><strong>Acoustique et propagation du son :</strong></p>
+<ul>
+<li>ISO 9613-1:1993, Attenuation of sound during propagation outdoors</li>
+<li>OMS, Guidelines for Community Noise (1999)</li>
+<li>INRS, Bruit en milieu de travail — <a href="https://www.inrs.fr/risques/bruit/ce-qu-il-faut-retenir.html">inrs.fr</a></li>
+<li>Kinsler et al., <em>Fundamentals of Acoustics</em>, Wiley (2000)</li>
+</ul>
+<p><strong>Dommages structurels :</strong></p>
+<ul>
+<li>NASA Technical Report CR-1780, Sonic Boom Damage to Buildings (1971)</li>
+<li>Bachmann et al., <em>Vibration Problems in Structures</em>, Birkhauser (1995)</li>
+</ul>
+<p><strong>Perception vibrotactile (sourds) :</strong></p>
+<ul>
+<li>Verrillo R.T., Vibration Sensation in Humans, <em>Music Perception</em> (1992)</li>
+<li>Russo F.A. et al., Vibrotactile perception of musical pitch (2012)</li>
+</ul>
+<p><strong>Immobilier et bruit :</strong></p>
+<ul>
+<li>Notaires de Paris, base BIEN — <a href="https://paris.notaires.fr/fr/prix-immobilier">paris.notaires.fr</a></li>
+<li>MeilleursAgents — <a href="https://www.meilleursagents.com/prix-immobilier/paris-75000/">meilleursagents.com</a></li>
+<li>INSEE / DVF — <a href="https://app.dvf.etalab.gouv.fr/">app.dvf.etalab.gouv.fr</a></li>
+<li>ADEME, Cout social du bruit en France (2021)</li>
+<li>Nelson J.P., Meta-analysis of airport noise and hedonic property values, <em>JTEP</em> (2004)</li>
+<li>Theebe M.A.J., The Impact of Traffic Noise on House Prices, <em>JREFE</em> (2004)</li>
+</ul>
+<p><strong>Profils frequentiels :</strong></p>
+<ul>
+<li>Tzanetakis G. &amp; Cook P., Musical Genre Classification of Audio Signals, <em>IEEE</em> (2002)</li>
+<li>Peeters G., A large set of audio features for sound description, IRCAM (2004)</li>
+</ul>
+<p><strong>Tour Eiffel :</strong></p>
+<ul>
+<li>Site officiel — <a href="https://www.toureiffel.paris/fr/le-monument/chiffres-cles">toureiffel.paris</a></li>
+</ul>
+<p><strong>Code source :</strong> disponible sur <a href="https://github.com/AAudes/Spotify_tour_eiffel">GitHub</a>.</p>
+
+
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp("https:\/\/aaudes\.github\.io\/stockastats\.github\.io");
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+</div> <!-- /content -->
+
+
+
+
+</body></html>
