@@ -1,169 +1,175 @@
 ---
-title: "Et si on accrochait Spotify a la Tour Eiffel ?"
+title: "Et si on accrochait Spotify à la Tour Eiffel ?"
 date: "2026-09-01"
-description: "On prend tout ce que la France ecoute sur Spotify en une journee, on le diffuse sur des enceintes accrochees a la Tour Eiffel, et on observe les consequences acoustiques, immobilieres et structurelles."
-categories: [acoustique, Spotify, experience de pensee, immobilier]
+description: "On prend tout ce que la France écoute sur Spotify en une journée, on le diffuse sur des enceintes accrochées à la Tour Eiffel, et on observe les conséquences acoustiques, immobilières et structurelles."
+categories: [acoustique, Spotify, question idiote, immobilier, cartographie]
 ---
 
-On connait le temps d'ecoute annuel de Spotify en France : des millions d'heures de musique chaque jour. Mais que se passerait-il si on rendait tout ca **physiquement audible** ? Si on accrochait a la Tour Eiffel suffisamment d'enceintes pour diffuser en continu, 24h/24, la totalite de ce qui est ecoute en France sur Spotify ?
+On connaît le temps d'écoute annuel de Spotify en France : des millions d'heures de musique chaque jour. Mais que se passerait-il si on rendait tout ça **physiquement audible** ? Si on accrochait à la Tour Eiffel suffisamment d'enceintes pour diffuser en continu, 24h/24, la totalité de ce qui est écouté en France sur Spotify ?
 
-C'est l'experience de pensee que l'on se propose de mener ici, etape par etape, en suivant la physique la ou elle nous mene.
+Pour connaître les conséquences, c'est par ici.
 
 ## Combien d'enceintes sur la Tour Eiffel ?
 
-### Le temps d'ecoute Spotify en France
+### Le temps d'écoute Spotify en France
 
-Spotify compte environ **24 millions d'utilisateurs actifs mensuels** en France. Chaque utilisateur ecoute en moyenne **30 minutes par jour**. Cela represente :
+Spotify compte environ **24 millions d'utilisateurs actifs mensuels** en France. Chaque utilisateur écoute en moyenne **30 minutes par jour**. Cela représente :
 
-- **12 millions d'heures** d'ecoute par jour
+- **12 millions d'heures** d'écoute par jour
 - soit **4,4 milliards d'heures** par an
 
-Pour diffuser l'integralite de ces ecoutes en continu sur 24 heures, il faut autant de flux simultanes que d'heures divisees par 24 : environ **500 000 flux simultanes**.
+Pour diffuser l'intégralité de ces écoutes en continu sur 24 heures, il faut autant de flux simultanés que d'heures divisées par 24 : environ **500 000 flux simultanés**.
 
-Chaque flux necessite une enceinte. On choisit un modele modeste : **2 watts** par enceinte.
+Chaque flux nécessite une enceinte. On choisit un modèle modeste : **2 watts** par enceinte (une petite enceinte bluetooth)
 
 ### La puissance totale
 
-Avec 500 000 enceintes de 2W, on obtient une puissance acoustique totale de **1 000 000 watts** -- soit un million de watts, ou encore **20 fois** la puissance d'un concert rock geant.
+Avec 500 000 enceintes de 2W, on obtient une puissance acoustique totale de **1 000 000 watts** soit **20 fois** la puissance d'un concert rock géant.
 
-### Est-ce que ca rentre sur la Tour Eiffel ?
+### Est-ce que ça rentre sur la Tour Eiffel ?
 
-Chaque enceinte occupe environ 10 x 10 cm. La structure metallique de la Tour Eiffel offre environ 25 000 m² de surface. Les 500 000 enceintes necessitent 5 000 m² : **ca rentre**, on n'utilise que 20% de la surface disponible. Cote poids, les 75 tonnes d'enceintes representent a peine 1% du poids de la tour (7 300 tonnes). La faisabilite physique n'est pas le probleme.
+Chaque enceinte occupe environ 10 x 10 cm. La structure métallique de la Tour Eiffel offre environ 25 000 m² de surface. Les 500 000 enceintes nécessitent 5 000 m² : **ça rentre**, on n'utilise que 20% de la surface disponible. Côté poids, les 75 tonnes d'enceintes représentent à peine 1% du poids de la tour (7 300 tonnes). La faisabilité physique n'est pas le problème.
 
-Le probleme, c'est le bruit.
+Le problème, c'est le bruit.
 
 ---
 
-## L'intensite sonore : un mur de son
+## L'intensité sonore : un mur de son
 
-### Le modele
+### Le modèle
 
-On modelise la Tour Eiffel comme une **source ponctuelle omnidirectionnelle**. L'intensite sonore decroit en $1/r^2$ (loi de l'inverse du carre) :
+On modélise la Tour Eiffel comme une **source ponctuelle omnidirectionnelle** (et ça va avoir son importance, la direction). L'intensité sonore décroît en $1/r^2$ (loi de l'inverse du carré) :
 
 $$L(r) = 10 \cdot \log_{10}\left(\frac{P_{total}}{4\pi r^2 \cdot I_0}\right) \quad \text{avec } I_0 = 10^{-12} \text{ W/m}^2$$
 
-### Les resultats
+### Les résultats
 
 | Lieu | Distance | Niveau sonore |
 |------|----------|---------------|
 | Pied de la Tour | 50 m | ~147 dB |
-| Trocadero | 500 m | ~127 dB |
+| Trocadéro | 500 m | ~127 dB |
 | Arc de Triomphe | 3 km | ~111 dB |
-| Peripherique | 6 km | ~105 dB |
+| Périphérique | 6 km | ~105 dB |
 | Versailles | 17 km | ~96 dB |
 
-Au pied de la Tour, on depasse la **rupture du tympan** (150 dB). Au Trocadero, c'est au-dessus du **seuil de douleur**. A l'Arc de Triomphe, c'est l'equivalent d'un concert a pleine puissance -- en continu. Meme au peripherique, le niveau reste dangereux pour l'audition.
+Au pied de la Tour, on dépasse le seuil de **rupture du tympan** (150 dB). Au Trocadéro, c'est au-dessus du **seuil de douleur**. À l'Arc de Triomphe, c'est l'équivalent d'un concert à pleine puissance — en continu. Même au périphérique, le niveau reste dangereux pour l'audition.
 
-### Attenuation avec la distance
+### Atténuation avec la distance
 
-![Attenuation du niveau sonore en fonction de la distance a la Tour Eiffel](graphe_attenuation_db.png)
+![Atténuation du niveau sonore en fonction de la distance à la Tour Eiffel](graphe_attenuation_db.png)
 
-Il faut s'eloigner a pres de **20 km** de la Tour pour retrouver un niveau comparable a celui d'une conversation normale (60 dB). Paris intra-muros est, en entier, au-dessus du seuil de danger.
+Il faut s'éloigner à près de **20 km** de la Tour pour retrouver un niveau comparable à celui d'une conversation normale (60 dB). Paris intra-muros est, en entier, au-dessus du seuil de danger.
 
 ---
 
 ## L'immobilier parisien s'effondre
 
-### Le modele de depreciation
+### Le modèle de dépréciation
 
-Les etudes economiques montrent qu'une augmentation du bruit au-dela de 55 dB entraine une depreciation d'environ **0,9% par decibel supplementaire** sur les prix immobiliers. Au-dela de 100 dB, on considere un bien comme **inhabitable** : sa valeur tombe a zero.
+Les études économiques montrent qu'une augmentation du bruit au-delà de 55 dB entraîne une dépréciation d'environ **0,9% par décibel supplémentaire** sur les prix immobiliers. Au-delà de 100 dB, on considère un bien comme **inhabitable** : sa valeur tombe à zéro.
 
-### Le resultat
+### Le résultat
 
-![Prix immobilier reel vs prix avec le bruit de Spotify sur la Tour Eiffel](graphe_immobilier_prix.png)
+![Prix immobilier réel vs prix avec le bruit de Spotify sur la Tour Eiffel](graphe_immobilier_prix.png)
 
-Tous les arrondissements de Paris deviennent inhabitables ou presque. Les beaux quartiers du 7e, 16e et 6e -- parmi les plus chers de France -- voient leur valeur tomber a **zero**. Meme en banlieue proche, les prix s'effondrent de 30 a 80%.
+Tous les arrondissements de Paris deviennent inhabitables ou presque. Les beaux quartiers du 7e, 16e et 6e — parmi les plus chers de France — voient leur valeur tomber à **zéro**. Même en banlieue proche, les prix s'effondrent de 30 à 80%.
 
-![Depreciation en pourcentage du prix immobilier](graphe_immobilier_perte.png)
+![Dépréciation en pourcentage du prix immobilier](graphe_immobilier_perte.png)
 
-Seules les communes situees a plus de 20 km conservent l'essentiel de leur valeur. Versailles, malgre ses 17 km de distance, subit encore une perte significative.
+Seules les communes situées à plus de 20 km conservent l'essentiel de leur valeur. Versailles, malgré ses 17 km de distance, subit encore une perte significative.
+
+### Carte de l'effondrement immobilier
+
+Sur la carte ci-dessous, chaque arrondissement et commune est positionné géographiquement. La couleur indique le pourcentage de perte de valeur, la taille du point le prix initial au m². Plus on est proche de la Tour, plus c'est violet foncé : inhabitable.
+
+![Impact sur les prix immobiliers par arrondissement et commune](carte_immobilier.png)
 
 ---
 
-## La Tour Eiffel, juke-box geant
+## La Tour Eiffel, juke-box géant
 
-### Repartition par genre musical
+### Répartition par genre musical
 
-On ne se contente pas de diffuser du bruit blanc : on respecte les proportions reelles d'ecoute Spotify en France. Chaque genre se voit attribuer un **quadrant** de la Tour Eiffel, proportionnel a sa part d'ecoute.
+Si on était des cochons, chaque haut-parleur diffuserait aléatoirement des chansons les unes à la suite des autres et ce mélange ferait une sorte de bruit blanc. Mais comme on est sympa, on respecte les proportions réelles d'écoute Spotify en France et chaque (groupe de) haut-parleurs sera spécialisé dans un type de musique. Chaque genre se voit attribuer un **quadrant** de la Tour Eiffel, proportionnel à sa part d'écoute.
 
-![Repartition des ecoutes Spotify France par genre](graphe_genres.png)
+![Répartition des écoutes Spotify France par genre](graphe_genres.png)
 
-Le rap/hip-hop et la pop dominent largement, suivis du rock et de l'electro. Le metal represente 5% des ecoutes, le classique 4%.
+Le rap/hip-hop et la pop dominent largement, suivis du rock et de l'électro. Le métal représente 5% des écoutes, le classique 4%.
 
 ### Les quadrants de la Tour
 
-![Vue du dessus : chaque secteur de la Tour emet un genre](graphe_quadrants.png)
+![Vue du dessus : chaque secteur de la Tour émet un genre](graphe_quadrants.png)
 
-Chaque secteur angulaire de la Tour Eiffel diffuse un genre different. La puissance emise dans chaque direction est proportionnelle a la part d'ecoute du genre.
+Chaque secteur angulaire de la Tour Eiffel diffuse un genre différent. La puissance émise dans chaque direction est proportionnelle à la part d'écoute du genre.
 
 ---
 
-## Le son n'est pas le meme dans toutes les directions
+## Le son n'est pas le même dans toutes les directions
 
-### Les profils frequentiels
+### Les profils fréquentiels
 
-Chaque genre musical a un **profil frequentiel** different. Le metal et le rap ont beaucoup d'energie dans les basses frequences (< 200 Hz), tandis que le classique et le jazz sont davantage concentres dans les mediums et les aigus.
+Chaque genre musical a un **profil fréquentiel** différent. Le métal et le rap ont beaucoup d'énergie dans les basses fréquences (< 200 Hz), tandis que le classique et le jazz sont davantage concentrés dans les médiums et les aigus.
 
-![Spectres frequentiels typiques par genre](graphe_spectres.png)
+![Spectres fréquentiels typiques par genre](graphe_spectres.png)
 
-### L'absorption atmospherique
+### L'absorption atmosphérique
 
-C'est la ou les choses deviennent asymetriques. L'air absorbe les sons differemment selon leur frequence :
+C'est là où les choses deviennent asymétriques. L'air absorbe les sons différemment selon leur fréquence :
 
-- A **100 Hz** (basses) : seulement **0,2 dB/km** d'absorption
-- A **1 000 Hz** (mediums) : **2,8 dB/km**
-- A **8 000 Hz** (aigus) : **25 dB/km**
+- À **100 Hz** (basses) : seulement **0,2 dB/km** d'absorption
+- À **1 000 Hz** (médiums) : **2,8 dB/km**
+- À **8 000 Hz** (aigus) : **25 dB/km**
 
-![Absorption atmospherique en fonction de la frequence](graphe_absorption.png)
+![Absorption atmosphérique en fonction de la fréquence](graphe_absorption.png)
 
-Les basses frequences traversent l'air presque sans perte. Les aigus sont absorbes tres rapidement. Consequence : **le son du metal et du rap porte beaucoup plus loin** que celui du classique ou du jazz.
+Les basses fréquences traversent l'air presque sans perte. Les aigus sont absorbés très rapidement. Conséquence : **le son du métal et du rap porte beaucoup plus loin** que celui du classique ou du jazz.
 
 ### Niveau sonore par genre, avec absorption
 
-![Niveau sonore par genre en tenant compte de l'absorption atmospherique](graphe_db_genre.png)
+![Niveau sonore par genre en tenant compte de l'absorption atmosphérique](graphe_db_genre.png)
 
-A 10 km, le quadrant metal est encore au-dessus de 85 dB (dangereux), tandis que le quadrant classique est deja retombe sous les 70 dB. La zone de danger n'est pas un cercle : c'est une **forme asymetrique**, etiree dans la direction des basses frequences.
+À 10 km, le quadrant métal est encore au-dessus de 85 dB (dangereux), tandis que le quadrant classique est déjà retombé sous les 70 dB. La zone de danger n'est pas un cercle : c'est une **forme asymétrique**, étirée dans la direction des basses fréquences.
 
 ---
 
-## Meme les sourds ne sont pas a l'abri
+## Même les sourds ne sont pas à l'abri
 
 ### La pression acoustique et les vibrations
 
-Les personnes sourdes n'entendent pas le son par l'oreille. Mais les basses frequences ne sont pas qu'un phenomene auditif : ce sont des **ondes de pression** qui font vibrer les murs, les planchers, et le corps humain.
+Les personnes sourdes n'entendent pas le son par l'oreille. Mais les basses fréquences ne sont pas qu'un phénomène auditif : ce sont des **ondes de pression** qui font vibrer les murs, les planchers, et le corps humain.
 
 ![Pression acoustique par genre](graphe_pression_genre.png)
 
-A partir de **110 dB** dans les basses frequences, les vibrations sont ressenties physiquement. Les sourds ne pourraient donc pas vivre tranquillement dans le quadrant metal ou rap, meme s'ils n'entendent rien.
+À partir de **110 dB** dans les basses fréquences, les vibrations sont ressenties physiquement. Les sourds ne pourraient donc pas vivre tranquillement dans le quadrant métal ou rap, même s'ils n'entendent rien.
 
 ### Des immeubles qui s'effondrent
 
-Les basses frequences sont particulierement destructrices pour les batiments. Les longueurs d'onde sont comparables aux dimensions des structures, ce qui peut provoquer des **resonances** :
+Les basses fréquences sont particulièrement destructrices pour les bâtiments. Les longueurs d'onde sont comparables aux dimensions des structures, ce qui peut provoquer des **résonances** :
 
-- **140 dB** : fissures dans le platre
-- **150 dB** : fenetres brisees, structures legeres endommagees
-- **160 dB** : dommages structurels serieux
-- **170 dB** : effondrement de maconnerie
+- **140 dB** : fissures dans le plâtre
+- **150 dB** : fenêtres brisées, structures légères endommagées
+- **160 dB** : dommages structurels sérieux
+- **170 dB** : effondrement de maçonnerie
 
-Le quadrant metal, avec ses 80 Hz dominants, provoquerait des degats structurels sur plusieurs kilometres. Le quadrant classique, avec ses frequences plus hautes, verrait ses vibrations absorbees beaucoup plus vite.
+Le quadrant métal, avec ses 80 Hz dominants, provoquerait des dégâts structurels sur plusieurs kilomètres. Le quadrant classique, avec ses fréquences plus hautes, verrait ses vibrations absorbées beaucoup plus vite.
 
-En revanche, cote classique et jazz, les vibrations s'attenuent bien plus rapidement. Un sourd pourrait theoriquement habiter plus pres de la Tour dans cette direction -- a condition que l'immeuble tienne debout.
+En revanche, côté classique et jazz, les vibrations s'atténuent bien plus rapidement. Un sourd pourrait théoriquement habiter plus près de la Tour dans cette direction — à condition que l'immeuble tienne debout.
 
 ---
 
-## La carte de Paris, deformee par la musique
+## La carte de Paris, déformée par la musique
 
 ### Zone de danger (> 85 dB)
 
-La carte suivante montre, pour chaque direction, la distance a laquelle le niveau sonore reste dangereux (> 85 dB). La forme est **asymetrique** : les genres a basses frequences (metal, rap, electro) projettent le danger beaucoup plus loin.
+La carte suivante montre, pour chaque direction, la distance à laquelle le niveau sonore reste dangereux (> 85 dB). La forme est **asymétrique** : les genres à basses fréquences (métal, rap, électro) projettent le danger beaucoup plus loin.
 
 ![Zone dangereuse par direction et genre, sur fond de carte Paris](carte_danger_85db.png)
 
 ### Zone invivable pour les sourds
 
-En ne regardant que les vibrations basses frequences (> 110 dB), on obtient une carte tres differente. Seuls les genres a basses frequences creent des zones d'exclusion significatives.
+En ne regardant que les vibrations basses fréquences (> 110 dB), on obtient une carte très différente. Seuls les genres à basses fréquences créent des zones d'exclusion significatives.
 
-![Zone invivable pour les sourds, vibrations basses frequences](carte_sourds_110db.png)
+![Zone invivable pour les sourds, vibrations basses fréquences](carte_sourds_110db.png)
 
 ### Vue d'ensemble : Paris sous le bruit
 
@@ -173,38 +179,164 @@ En ne regardant que les vibrations basses frequences (> 110 dB), on obtient une 
 
 ## Et dans d'autres villes ?
 
-Le modele est parametrable. En changeant le nombre d'utilisateurs et le monument, on peut reproduire l'experience pour n'importe quelle ville. A titre d'exemple :
+Le modèle est paramétrable. En changeant le nombre d'utilisateurs et le monument, on peut reproduire l'expérience pour n'importe quelle ville. À titre d'exemple :
 
-![Lyon : zones d'impact depuis la Basilique de Fourviere](carte_lyon.png)
+![Lyon : zones d'impact depuis la Basilique de Fourvière](carte_lyon.png)
 
 ![Marseille : zones d'impact depuis Notre-Dame de la Garde](carte_marseille.png)
 
-Avec moins d'utilisateurs, la puissance est moindre -- mais les centres-villes restent largement inhabitables.
+Avec moins d'utilisateurs, la puissance est moindre — mais les centres-villes restent largement inhabitables.
 
 ---
 
-## En resume
+## La zone de Jul
+
+### L'artiste le plus écouté de France
+
+Jul est l'artiste le plus streamé en France depuis plusieurs années, avec environ **1,8%** de l'ensemble des écoutes Spotify françaises. Ça peut paraître peu, mais rapporté à notre installation :
+
+- **9 000 enceintes** dédiées exclusivement à Jul
+- **18 000 watts** de Jul pur
+- C'est l'équivalent d'un gros concert de rock... rien que pour un seul artiste
+
+### Le sous-quadrant Jul
+
+Jul étant un rappeur, ses enceintes se trouvent dans le **quadrant rap/hip-hop** de la Tour. Il occupe environ 8% du secteur rap (1,8% / 22%), soit un mince sous-secteur angulaire.
+
+Mais la musique de Jul est dominée par les **basses profondes** (808, sub-bass autour de 70 Hz), qui se propagent très loin grâce à la faible absorption atmosphérique. Résultat : la zone dangereuse de Jul seul (> 85 dB) s'étend sur plusieurs centaines de mètres.
+
+### La carte des rues de Jul
+
+Sur cette carte ultra-zoomée, on voit le sous-secteur Jul en rouge, à l'intérieur du quadrant rap (en violet). Les rues couvertes par la zone de Jul sont clairement identifiables au niveau du Champ-de-Mars et des rues avoisinantes.
+
+![La zone de Jul — sous-secteur du quadrant rap, vue au niveau des rues](carte_jul.png)
+
+À l'échelle d'un quartier, Jul à lui seul produit un niveau sonore comparable à celui d'un orchestre symphonique en continu. Les riverains du Champ-de-Mars seraient bercés par du « Bande organisée » 24h/24.
+
+### Jul à pleine puissance : le rayon qui découpe la France
+
+Et si on remplaçait les enceintes Bluetooth par des enceintes de festival (12 000W) ? Jul passerait de 18 000 W à **108 MW**. Son petit secteur de 6,5° devient un rayon de Jul qui découpe le nord de la France :
+
+| Enceinte | Puissance Jul | Rayon danger (85 dB) |
+|----------|--------------|---------------------|
+| 2W (actuel) | 18 kW | ~500 m |
+| 2 000W (concert) | 18 MW | ~67 km (au-delà de l'Île-de-France) |
+| 12 000W (festival) | 108 MW | ~165 km (Amiens, Rouen, Beauvais) |
+
+À 12 000W, ce mince rayon de 6,5° traverse la Picardie et atteint presque la Belgique. Beauvais, Amiens et une partie du nord de la France seraient exposés à des niveaux dangereux de Jul — et *uniquement* de Jul. Les habitants de ces villes entendraient une basse 808 sourde et continue, 24 heures sur 24, sans savoir pourquoi.
+
+![Le rayon de Jul à pleine puissance — un secteur de 6,5° qui découpe le nord de la France](carte_jul_france.png)
+
+---
+
+## Et si on montait le volume ?
+
+### Le choix de l'enceinte change tout
+
+Jusqu'ici, on a utilisé de modestes enceintes Bluetooth de **2 watts**. Mais il existe des enceintes bien plus puissantes, qui vont jusqu'à **12 000 watts**. Que se passe-t-il si on remplace nos 500 000 petites enceintes par des monstres ?
+
+Vous vous souvenez de Marty McFly dans l'intro de *Retour vers le futur*, qui branche sa guitare sur un ampli géant, joue une note et décolle en arrière ? C'est un peu l'idée. Sauf qu'ici, c'est tout Paris qui décolle.
+
+### Mais d'abord : est-ce que ça rentre ?
+
+Nos petites enceintes Bluetooth de 10×10 cm tenaient confortablement sur la Tour (20% de la surface, 1% du poids). Mais une enceinte de concert fait **50×50 cm** et pèse **35 kg**. Faisons le calcul :
+
+| Type d'enceinte | Dimensions | Poids unitaire | Surface totale | Poids total | Tours Eiffel nécessaires |
+|-----------------|-----------|---------------|----------------|-------------|-------------------------|
+| Bluetooth (2W) | 10×10 cm | 0,3 kg | 5 000 m² | 150 t | **0,2** (ça rentre) |
+| Salon (20W) | 20×15 cm | 2 kg | 15 000 m² | 1 000 t | 0,6 (ça rentre juste) |
+| Sono (200W) | 35×30 cm | 15 kg | 52 500 m² | 7 500 t | **2,1** |
+| Concert (2 000W) | 50×50 cm | 35 kg | 125 000 m² | 17 500 t | **5** |
+| Festival (12 000W) | 80×80 cm | 80 kg | 320 000 m² | 40 000 t | **13** |
+
+À partir de la sono de bar, **ça ne rentre plus**. Les enceintes de concert nécessiteraient **5 Tours Eiffel** de surface, et pèseraient 2,4 fois le poids de la Tour elle-même. Pour les enceintes de festival, il faudrait **13 Tours Eiffel** et les enceintes pèseraient 5,5 fois la structure.
+
+### Alternative : un cylindre géant
+
+Puisque la Tour ne suffit plus, imaginons qu'on empile les enceintes sur la paroi extérieure d'un **cylindre de 50 m de diamètre** (circonférence ≈ 157 m) :
+
+| Type d'enceinte | Par anneau | Anneaux | **Hauteur du cylindre** | vs Tour Eiffel |
+|-----------------|-----------|---------|------------------------|----------------|
+| Bluetooth (2W) | 1 570 | 319 | **32 m** | 10% de la Tour |
+| Salon (20W) | 785 | 637 | **96 m** | Premier étage |
+| Sono (200W) | 449 | 1 114 | **335 m** | La Tour pile ! |
+| Concert (2 000W) | 314 | 1 592 | **796 m** | 2,4× (dépasse le Burj Khalifa) |
+| Festival (12 000W) | 196 | 2 551 | **2 041 m** | 6,2× (une colonne de 2 km) |
+
+Coïncidence magnifique : les enceintes de sono empilées font **exactement la hauteur de la Tour Eiffel**. Les enceintes de concert dépassent le Burj Khalifa, et les enceintes de festival forment une colonne de **2 kilomètres de haut** visible depuis toute l'Île-de-France.
+
+Mais bon, on ne va pas se laisser arrêter par un détail logistique.
+
+### Les rayons d'impact
+
+| Type d'enceinte | Puissance totale | Rayon danger (85 dB) | Rayon douleur (120 dB) |
+|-----------------|-----------------|---------------------|----------------------|
+| Bluetooth (2W) | 1 MW | ~15 km | ~1 km |
+| Salon (20W) | 10 MW | ~47 km | ~3 km |
+| Sono (200W) | 100 MW | ~150 km | ~9 km |
+| Concert (2 000W) | 1 GW | ~470 km | ~30 km |
+| Festival (12 000W) | 6 GW | ~1 170 km | ~78 km |
+
+### La consommation en réacteurs nucléaires
+
+Un réacteur nucléaire produit environ **900 MW**. Voici ce qu'il faut pour alimenter nos enceintes :
+
+| Type d'enceinte | Puissance totale | Réacteurs nucléaires | Part de la production française |
+|-----------------|-----------------|---------------------|-------------------------------|
+| Bluetooth (2W) | 1 MW | 0,001 (un millième) | ~0,002% |
+| Salon (20W) | 10 MW | 0,01 | ~0,02% |
+| Sono (200W) | 100 MW | 0,11 | ~0,15% |
+| Concert (2 000W) | 1 GW | **1,1** | ~1,6% |
+| Festival (12 000W) | 6 GW | **6,7** | ~9,6% |
+
+Avec les enceintes de concert, il faut **un réacteur nucléaire dédié** rien que pour diffuser Spotify sur la Tour Eiffel. Avec les enceintes de festival, on mobilise **presque 7 réacteurs** — soit plus de 10% du parc nucléaire français (56 réacteurs) pour faire du bruit. En énergie, ça représente **144 GWh par jour**, de quoi alimenter une ville de 2 millions d'habitants.
+
+![Rayon d'impact pour différents types d'enceintes](graphe_puissance_comparaison.png)
+
+### Des immeubles qui s'effondrent à des kilomètres
+
+Avec nos petites enceintes de 2W, les dommages structurels (fissures, fenêtres brisées) restaient confinés à quelques mètres du pied de la Tour. Mais en montant la puissance, la zone de destruction s'étend considérablement — surtout dans le quadrant métal, où les basses fréquences (80 Hz) ne sont quasiment pas absorbées par l'air.
+
+À **2 000W par enceinte** (quadrant métal seul) :
+
+- Fissures dans le plâtre : **~1 km** (tout le 7e arrondissement)
+- Fenêtres brisées : **~300 m** (le Champ-de-Mars est un champ de débris)
+- Dommages structurels sérieux : **~90 m** (les immeubles les plus proches vacillent)
+
+![Zones de destruction structurelle en fonction de la puissance](graphe_destruction_puissance.png)
+
+### L'Europe entière sous le bruit
+
+À 12 000W par enceinte, le rayon de danger auditif (85 dB) dépasse **1 000 km**. Londres, Bruxelles, Amsterdam, Barcelone, Milan, Berlin — toutes ces villes sont dans la zone dangereuse. Même Madrid, à plus de 1 000 km, reste au-dessus de 80 dB.
+
+![Carte de l'Europe — zones d'impact à pleine puissance](carte_europe_12kw.png)
+
+On passe d'une catastrophe parisienne à une catastrophe continentale. L'Europe occidentale entière serait inhabitable, et il faudrait aller jusqu'à Moscou ou Marrakech pour retrouver un niveau sonore acceptable.
+
+---
+
+## En résumé
 
 | | Valeur |
 |---|---|
-| Ecoute Spotify France / jour | 12 000 000 heures |
-| Flux simultanes | 500 000 |
+| Écoute Spotify France / jour | 12 000 000 heures |
+| Flux simultanés | 500 000 |
 | Enceintes 2W | 500 000 |
 | Puissance totale | 1 000 000 W |
-| Seuil de douleur atteint a | ~1 km |
-| Seuil de danger atteint a | ~15 km |
-| Conversation normale a | ~50 km |
+| Seuil de douleur atteint à | ~1 km |
+| Seuil de danger atteint à | ~15 km |
+| Conversation normale à | ~50 km |
 
-Paris est entierement inhabitable. L'immobilier s'effondre. Les sourds sont epargnes cote classique mais pas cote metal. Et la Tour Eiffel, elle, tient le coup.
+Paris est entièrement inhabitable. L'immobilier s'effondre. Les sourds sont épargnés côté classique mais pas côté métal. Et la Tour Eiffel, elle, tient le coup.
 
 ---
 
 ## Sources
 
-**Spotify et ecoute musicale :**
+**Spotify et écoute musicale :**
 
 - Spotify Company Info & Earnings Reports — [newsroom.spotify.com](https://newsroom.spotify.com/company-info/)
-- SNEP, Bilan du marche de la musique — [snepmusique.com](https://www.snepmusique.com/les-chiffres/)
+- SNEP, Bilan du marché de la musique — [snepmusique.com](https://www.snepmusique.com/les-chiffres/)
 - Business of Apps, Spotify Statistics — [businessofapps.com](https://www.businessofapps.com/data/spotify-statistics/)
 - IFPI Global Music Report 2024 — [ifpi.org](https://www.ifpi.org/resources/)
 
@@ -230,11 +362,11 @@ Paris est entierement inhabitable. L'immobilier s'effondre. Les sourds sont epar
 - Notaires de Paris, base BIEN — [paris.notaires.fr](https://paris.notaires.fr/fr/prix-immobilier)
 - MeilleursAgents — [meilleursagents.com](https://www.meilleursagents.com/prix-immobilier/paris-75000/)
 - INSEE / DVF — [app.dvf.etalab.gouv.fr](https://app.dvf.etalab.gouv.fr/)
-- ADEME, Cout social du bruit en France (2021)
+- ADEME, Coût social du bruit en France (2021)
 - Nelson J.P., Meta-analysis of airport noise and hedonic property values, *JTEP* (2004)
 - Theebe M.A.J., The Impact of Traffic Noise on House Prices, *JREFE* (2004)
 
-**Profils frequentiels :**
+**Profils fréquentiels :**
 
 - Tzanetakis G. & Cook P., Musical Genre Classification of Audio Signals, *IEEE* (2002)
 - Peeters G., A large set of audio features for sound description, IRCAM (2004)
