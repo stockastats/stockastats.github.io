@@ -177,18 +177,6 @@ En ne regardant que les vibrations basses fréquences (> 110 dB), on obtient une
 
 ---
 
-## Et dans d'autres villes ?
-
-Le modèle est paramétrable. En changeant le nombre d'utilisateurs et le monument, on peut reproduire l'expérience pour n'importe quelle ville. À titre d'exemple :
-
-![Lyon : zones d'impact depuis la Basilique de Fourvière](carte_lyon.png)
-
-![Marseille : zones d'impact depuis Notre-Dame de la Garde](carte_marseille.png)
-
-Avec moins d'utilisateurs, la puissance est moindre — mais les centres-villes restent largement inhabitables.
-
----
-
 ## La zone de Jul
 
 ### L'artiste le plus écouté de France
