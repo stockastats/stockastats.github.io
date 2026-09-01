@@ -185,17 +185,17 @@ En ne regardant que les vibrations basses fréquences (> 110 dB), on obtient une
 
 ### L'artiste le plus écouté de France
 
-Jul est l'artiste le plus streamé en France depuis plusieurs années[^jul], avec environ **1,8%** de l'ensemble des écoutes Spotify françaises. Ça peut paraître peu, mais rapporté à notre installation :
+Jul a dépassé les **10 milliards de streams cumulés** sur Spotify[^jul], soit environ 1,5 à 2 milliards par an. Avec une durée moyenne de ~3 minutes par morceau, cela représente **75 à 100 millions d'heures d'écoute par an** — soit environ **1,5%** de l'écoute totale Spotify en France (4,4 milliards d'heures/an). Rapporté à notre installation :
 
-- **9 000 enceintes** dédiées exclusivement à Jul
-- **18 000 watts** de Jul pur
+- **7 500 enceintes** dédiées exclusivement à Jul
+- **15 000 watts** de Jul pur
 - C'est l'équivalent d'un gros concert de rock... rien que pour un seul artiste
 
 ### Le sous-quadrant Jul
 
-Jul étant un rappeur, ses enceintes se trouvent dans le **quadrant rap/hip-hop** de la Tour. Il occupe environ 8% du secteur rap (1,8% / 22%), soit un mince sous-secteur angulaire.
+Jul étant un rappeur, ses enceintes se trouvent dans le **quadrant rap/hip-hop** de la Tour. Il occupe environ 7% du secteur rap (1,5% / 22%), soit un mince sous-secteur angulaire.
 
-Mais la musique de Jul est dominée par les **basses profondes** (808, sub-bass autour de 70 Hz), qui se propagent très loin grâce à la faible absorption atmosphérique. Résultat : la zone dangereuse de Jul seul (> 85 dB) s'étend sur plusieurs centaines de mètres.
+Mais la musique de Jul est dominée par les **basses profondes** (808, sub-bass autour de 70 Hz), qui se propagent très loin grâce à la faible absorption atmosphérique. Résultat : la zone dangereuse de Jul seul (> 85 dB) s'étend sur environ **2 km**.
 
 ### La carte des rues de Jul
 
@@ -207,17 +207,17 @@ Sur cette carte ultra-zoomée, on voit le sous-secteur Jul en rouge, à l'intér
 
 ### Jul à pleine puissance : le rayon qui découpe la France
 
-Et si on remplaçait les enceintes Bluetooth par des enceintes de festival (12 000W) ? Jul passerait de 18 000 W à **108 MW**. Son petit secteur de 6,5° devient un rayon de Jul qui découpe le nord de la France :
+Et si on remplaçait les enceintes Bluetooth par des enceintes de festival (12 000W) ? Jul passerait de 15 000 W à **90 MW**. Son petit secteur de 5,4° devient un rayon de Jul qui découpe le nord de la France :
 
 | Enceinte | Puissance Jul | Rayon danger (85 dB) |
 |----------|--------------|---------------------|
-| 2W (actuel) | 18 kW | ~500 m |
-| 2 000W (concert) | 18 MW | ~40 km |
-| 12 000W (festival) | 108 MW | ~89 km |
+| 2W (actuel) | 15 kW | ~2 km |
+| 2 000W (concert) | 15 MW | ~38 km |
+| 12 000W (festival) | 90 MW | ~65 km |
 
-Même à 70 Hz, l'absorption atmosphérique finit par compter sur de longues distances (0,11 dB/km × 89 km ≈ 10 dB de perte supplémentaire). Mais le résultat reste spectaculaire : à 12 000W, ce mince rayon de 6,5° s'étend sur **89 km** au nord de Paris. Toute la frange sud de la Picardie serait exposée à des niveaux dangereux de Jul — et *uniquement* de Jul. Les habitants entendraient une basse 808 sourde et continue, 24 heures sur 24, sans savoir pourquoi.
+Même à 70 Hz, l'absorption atmosphérique finit par compter sur de longues distances (0,11 dB/km). Mais le résultat reste spectaculaire : à 12 000W, ce mince rayon de 5,4° s'étend sur **65 km** au nord de Paris. Toute la frange sud de la Picardie serait exposée à des niveaux dangereux de Jul — et *uniquement* de Jul. Les habitants entendraient une basse 808 sourde et continue, 24 heures sur 24, sans savoir pourquoi.
 
-![Le rayon de Jul à pleine puissance — un secteur de 6,5° qui découpe le nord de la France](carte_jul_france.png)
+![Le rayon de Jul à pleine puissance — un secteur de 5,4° qui découpe le nord de la France](carte_jul_france.png)
 
 ---
 
@@ -355,7 +355,7 @@ Paris est entièrement inhabitable. L'immobilier s'effondre. Les sourds sont ép
 
 [^struct]: Les seuils de dommages structurels par ondes acoustiques proviennent de la littérature sur les bangs soniques et les vibrations industrielles. Voir : Bachmann H. et al., *Vibration Problems in Structures*, Birkhäuser (1995). Les valeurs exactes (140-170 dB) sont des ordres de grandeur issus de la littérature, pas des seuils normés.
 
-[^jul]: Jul est régulièrement l'artiste le plus streamé en France sur Spotify depuis 2018 (Spotify Charts France, classements annuels SNEP). Sa part de 1,8% est une estimation basée sur ses volumes de streams rapportés au total national.
+[^jul]: Jul a dépassé les 10 milliards de streams cumulés sur Spotify (visible sur sa page artiste). Avec une durée moyenne de ~3 min par morceau et un volume annuel estimé à 1,5-2 milliards de streams, cela représente 75-100 millions d'heures/an, soit ~1,5% du total français (4,4 milliards d'heures/an, source SNEP : 122 milliards de streams en 2024).
 
 [^dvf]: Prix immobiliers par arrondissement : base DVF (Demandes de Valeurs Foncières), données publiques. Voir [app.dvf.etalab.gouv.fr](https://app.dvf.etalab.gouv.fr/).
 
