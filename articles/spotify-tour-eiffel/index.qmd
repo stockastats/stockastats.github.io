@@ -255,7 +255,7 @@ Mais bon, on ne va pas se laisser arrêter par un détail logistique.
 
 ### Les rayons d'impact
 
-Ces rayons sont calculés **avec absorption atmosphérique** à 80 Hz (fréquence basse — le pire cas réaliste, car les basses portent le plus loin)[^iso]. Les valeurs exactes sortent du script `08_puissance.R`.
+Ces rayons sont calculés **avec absorption atmosphérique** à 80 Hz (fréquence basse — le pire cas réaliste, car les basses portent le plus loin)[^iso].
 
 | Type d'enceinte | Puissance totale | Rayon danger (85 dB) | Rayon douleur (120 dB) |
 |-----------------|-----------------|---------------------|----------------------|
