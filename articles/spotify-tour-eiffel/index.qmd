@@ -92,19 +92,13 @@ En élargissant la vue à l'Île-de-France, on voit la dépréciation se propage
 
 ## La Tour Eiffel, juke-box géant
 
-### Répartition par genre musical
-
-Si on était des cochons, chaque haut-parleur diffuserait aléatoirement des chansons les unes à la suite des autres et ce mélange ferait une sorte de bruit blanc. Mais comme on est sympa, on respecte les proportions réelles d'écoute Spotify en France[^snep] et chaque (groupe de) haut-parleurs sera spécialisé dans un type de musique. Chaque genre se voit attribuer un **quadrant** de la Tour Eiffel, proportionnel à sa part d'écoute.
-
-![Répartition des écoutes Spotify France par genre](graphe_genres.png)
-
-Le rap/hip-hop et la pop dominent largement, suivis du rock et de l'électro. Le métal représente 5% des écoutes, le classique 4%.
-
 ### Les quadrants de la Tour
+
+Si on était des cochons, chaque haut-parleur diffuserait aléatoirement des chansons les unes à la suite des autres et ce mélange ferait une sorte de bruit blanc. Mais comme on est sympa, on respecte les proportions réelles d'écoute Spotify en France[^snep] et chaque (groupe de) haut-parleurs sera spécialisé dans un type de musique. Chaque genre se voit attribuer un **secteur angulaire** de la Tour Eiffel, proportionnel à sa part d'écoute.
 
 ![Vue du dessus : chaque secteur de la Tour émet un genre](graphe_quadrants.png)
 
-Chaque secteur angulaire de la Tour Eiffel diffuse un genre différent. La puissance émise dans chaque direction est proportionnelle à la part d'écoute du genre.
+Le rap/hip-hop et la pop dominent largement (23% et 22%), suivis du rock et de l'électro (10% chacun). Le métal représente 5% des écoutes, le classique 4%. La puissance émise dans chaque direction est proportionnelle à la part d'écoute du genre.
 
 ---
 
