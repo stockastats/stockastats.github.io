@@ -85,9 +85,9 @@ ul.task-list li input[type="checkbox"] {
     }
 
     const options = {
-      valueNames: ['listing-title','listing-date','listing-description',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
+      valueNames: ['listing-title','listing-date','listing-description','listing-categories',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
       
-      searchColumns: ["listing-date","listing-title","listing-author","listing-image","listing-description"],
+      searchColumns: ["listing-title","listing-author","listing-date","listing-image","listing-description","listing-categories"],
     };
 
     window['quarto-listings'] = window['quarto-listings'] || {};
@@ -174,9 +174,9 @@ window.Quarto = {
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
         
-    </div>
+    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(2)</span></div><div class="category" data-category="YWNvdXN0aXF1ZQ==">acoustique <span class="quarto-category-count">(1)</span></div><div class="category" data-category="ZXhwZXJpZW5jZSUyMGRlJTIwcGVuc2Vl">experience de pensee <span class="quarto-category-count">(1)</span></div><div class="category" data-category="aW1tb2JpbGllcg==">immobilier <span class="quarto-category-count">(1)</span></div><div class="category" data-category="SU5TRUU=">INSEE <span class="quarto-category-count">(1)</span></div><div class="category" data-category="cHIlQzMlQTlub21z">prénoms <span class="quarto-category-count">(1)</span></div><div class="category" data-category="U3BvdGlmeQ==">Spotify <span class="quarto-category-count">(1)</span></div><div class="category" data-category="c3RhdGlzdGlxdWVz">statistiques <span class="quarto-category-count">(1)</span></div></div></div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
@@ -199,46 +199,74 @@ window.Quarto = {
 </header>
 
 
-<p>Tous les articles importes apparaissent ci-dessous.</p>
+<p>Tous les articles publies.</p>
 
 
 
 
-<div class="quarto-listing quarto-listing-container-default" id="listing-listing">
-<div class="list quarto-listing-default">
-<div class="quarto-post image-right" data-index="0" data-categories="YWNvdXN0aXF1ZSUyQ1Nwb3RpZnklMkNleHBlcmllbmNlJTIwZGUlMjBwZW5zZWUlMkNpbW1vYmlsaWVy" data-listing-date-sort="1788213600000" data-listing-file-modified-sort="1788246177688" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="8" data-listing-word-count-sort="1557">
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="../articles/spotify-tour-eiffel/index.html" class="no-external">Et si on accrochait Spotify a la Tour Eiffel ?</a>
-</h3>
-<div class="delink listing-description"><a href="../articles/spotify-tour-eiffel/index.html" class="no-external">
-<p>On prend tout ce que la France ecoute sur Spotify en une journee, on le diffuse sur des enceintes accrochees a la Tour Eiffel, et on observe les consequences acoustiques, immobilieres et structurelles.</p>
-</a></div>
+<div class="quarto-listing quarto-listing-container-grid" id="listing-listing">
+<div class="listing-actions-group">
+    <div class="input-group input-group-sm quarto-listing-filter">
+      <span class="input-group-text"><i class="bi bi-search"></i></span>
+      <input type="text" class="search form-control" placeholder="Filter">
+    </div>
 </div>
-<div class="metadata">
-<a href="../articles/spotify-tour-eiffel/index.html" class="no-external">
+<div class="list grid quarto-listing-cols-2">
+<div class="g-col-1" data-index="0" data-categories="YWNvdXN0aXF1ZSUyQ1Nwb3RpZnklMkNleHBlcmllbmNlJTIwZGUlMjBwZW5zZWUlMkNpbW1vYmlsaWVy" data-listing-date-sort="1788213600000" data-listing-file-modified-sort="1788246177688" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="8" data-listing-word-count-sort="1557">
+<a href="../articles/spotify-tour-eiffel/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Et si on accrochait Spotify a la Tour Eiffel ?
+</h5>
+<div class="listing-categories">
+
+<div class="listing-category" onclick="window.quartoListingCategory('YWNvdXN0aXF1ZQ=='); return false;">acoustique</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('U3BvdGlmeQ=='); return false;">Spotify</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('ZXhwZXJpZW5jZSUyMGRlJTIwcGVuc2Vl'); return false;">experience de pensee</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('aW1tb2JpbGllcg=='); return false;">immobilier</div>
+
+</div>
+<div class="card-text listing-description delink">
+<p>On prend tout ce que la France ecoute sur Spotify en une journee, on le diffuse sur des enceintes accrochees a la Tour Eiffel, et on observe les consequences acoustiques…</p>
+</div>
+<div class="card-attribution card-text-small end">
 <div class="listing-date">
 Sep 1, 2026
 </div>
-</a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="1" data-categories="cHIlQzMlQTlub21zJTJDc3RhdGlzdGlxdWVzJTJDSU5TRUU=" data-listing-date-sort="1788127200000" data-listing-file-modified-sort="1788164415360" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="589">
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="../articles/prenoms-unisexes/index.html" class="no-external">Les prénoms unisexes mais pas trop</a>
-</h3>
-<div class="delink listing-description"><a href="../articles/prenoms-unisexes/index.html" class="no-external">
+</div></a>
+</div>
+<div class="g-col-1" data-index="1" data-categories="cHIlQzMlQTlub21zJTJDc3RhdGlzdGlxdWVzJTJDSU5TRUU=" data-listing-date-sort="1788127200000" data-listing-file-modified-sort="1788164415360" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="589">
+<a href="../articles/prenoms-unisexes/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Les prénoms unisexes mais pas trop
+</h5>
+<div class="listing-categories">
+
+<div class="listing-category" onclick="window.quartoListingCategory('cHIlQzMlQTlub21z'); return false;">prénoms</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('c3RhdGlzdGlxdWVz'); return false;">statistiques</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('SU5TRUU='); return false;">INSEE</div>
+
+</div>
+<div class="card-text listing-description delink">
 <p>Analyse des prénoms donnés aux deux sexes en France depuis 1900 : ratios, fréquences et évolutions surprenantes au fil du temps.</p>
-</a></div>
 </div>
-<div class="metadata">
-<a href="../articles/prenoms-unisexes/index.html" class="no-external">
+<div class="card-attribution card-text-small end">
 <div class="listing-date">
 Aug 31, 2026
 </div>
-</a>
 </div>
+</div>
+</div></a>
 </div>
 </div>
 <div class="listing-no-matching d-none">No matching items</div>

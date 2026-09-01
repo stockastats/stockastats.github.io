@@ -1,15 +1,14 @@
 ---
-title: "Bienvenue"
+title: "StockaStats"
+listing:
+  contents:
+    - "articles/*/index.qmd"
+  sort: "date desc"
+  type: grid
+  grid-columns: 2
+  categories: true
+  fields: [title, date, description, categories]
+  filter-ui: true
 ---
 
-# Site d'articles
-
-Ce site Quarto centralise des articles venant d'autres depots Git.
-
-## Workflow rapide
-
-1. Cloner un depot source localement.
-2. Recuperer un fichier Markdown/Quarto a publier.
-3. L'importer dans `articles/` avec le script d'import.
-4. Lancer `quarto render`.
-5. Pousser le dossier `docs/` sur `main` pour GitHub Pages.
+Analyses statistiques, experiences de pensee et visualisations en tous genres.

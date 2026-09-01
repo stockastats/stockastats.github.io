@@ -4,8 +4,11 @@ listing:
   contents:
     - "*/index.qmd"
   sort: "date desc"
-  type: default
-  fields: [title, date, description]
+  type: grid
+  grid-columns: 2
+  categories: true
+  fields: [title, date, description, categories]
+  filter-ui: true
 ---
 
-Tous les articles importes apparaissent ci-dessous.
+Tous les articles publies.
