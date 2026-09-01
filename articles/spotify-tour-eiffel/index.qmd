@@ -13,7 +13,7 @@ Pour connaître les conséquences, c'est par ici.
 
 ### Le temps d'écoute Spotify en France
 
-Spotify compte environ **24 millions d'utilisateurs actifs mensuels** en France. Chaque utilisateur écoute en moyenne **30 minutes par jour**. Cela représente :
+Spotify compte environ **24 millions d'utilisateurs actifs mensuels** en France[^spotify]. Chaque utilisateur écoute en moyenne **30 minutes par jour**[^ecoute]. Cela représente :
 
 - **12 millions d'heures** d'écoute par jour
 - soit **4,4 milliards d'heures** par an
@@ -28,7 +28,7 @@ Avec 500 000 enceintes de 2W, on obtient une puissance acoustique totale de **1 
 
 ### Est-ce que ça rentre sur la Tour Eiffel ?
 
-Chaque enceinte occupe environ 10 x 10 cm. La structure métallique de la Tour Eiffel offre environ 25 000 m² de surface. Les 500 000 enceintes nécessitent 5 000 m² : **ça rentre**, on n'utilise que 20% de la surface disponible. Côté poids, les 75 tonnes d'enceintes représentent à peine 1% du poids de la tour (7 300 tonnes). La faisabilité physique n'est pas le problème.
+Chaque enceinte occupe environ 10 x 10 cm. La structure métallique de la Tour Eiffel offre environ **200 000 m²** de surface[^tour]. Les 500 000 enceintes nécessitent 5 000 m² : **ça rentre largement**, on n'utilise que 2,5% de la surface disponible. Côté poids, les 150 tonnes d'enceintes représentent à peine 2% du poids de la charpente (7 300 tonnes)[^tour]. La faisabilité physique n'est pas le problème.
 
 Le problème, c'est le bruit.
 
@@ -38,7 +38,7 @@ Le problème, c'est le bruit.
 
 ### Le modèle
 
-On modélise la Tour Eiffel comme une **source ponctuelle omnidirectionnelle** (et ça va avoir son importance, la direction). L'intensité sonore décroît en $1/r^2$ (loi de l'inverse du carré) :
+On modélise la Tour Eiffel comme une **source ponctuelle omnidirectionnelle** (et ça va avoir son importance, la direction). L'intensité sonore décroît en $1/r^2$ (loi de l'inverse du carré)[^kinsler] :
 
 $$L(r) = 10 \cdot \log_{10}\left(\frac{P_{total}}{4\pi r^2 \cdot I_0}\right) \quad \text{avec } I_0 = 10^{-12} \text{ W/m}^2$$
 
@@ -52,7 +52,7 @@ $$L(r) = 10 \cdot \log_{10}\left(\frac{P_{total}}{4\pi r^2 \cdot I_0}\right) \qu
 | Périphérique | 6 km | ~105 dB |
 | Versailles | 17 km | ~96 dB |
 
-Au pied de la Tour, on dépasse le seuil de **rupture du tympan** (150 dB). Au Trocadéro, c'est au-dessus du **seuil de douleur**. À l'Arc de Triomphe, c'est l'équivalent d'un concert à pleine puissance — en continu. Même au périphérique, le niveau reste dangereux pour l'audition.
+Au pied de la Tour, on dépasse le seuil de **rupture du tympan** (150 dB). Au Trocadéro, c'est au-dessus du **seuil de douleur**[^inrs]. À l'Arc de Triomphe, c'est l'équivalent d'un concert à pleine puissance — en continu. Même au périphérique, le niveau reste dangereux pour l'audition.
 
 ### Atténuation avec la distance
 
@@ -66,13 +66,13 @@ Il faut s'éloigner à près de **20 km** de la Tour pour retrouver un niveau co
 
 ### Le modèle de dépréciation
 
-Les études économiques montrent qu'une augmentation du bruit au-delà de 55 dB entraîne une dépréciation d'environ **0,9% par décibel supplémentaire** sur les prix immobiliers. Au-delà de 100 dB, on considère un bien comme **inhabitable** : sa valeur tombe à zéro.
+Les études économiques montrent qu'une augmentation du bruit au-delà de 55 dB entraîne une dépréciation d'environ **0,9% par décibel supplémentaire** sur les prix immobiliers[^nelson]. Au-delà de 100 dB, on considère un bien comme **inhabitable** : sa valeur tombe à zéro.
 
 ### Le résultat
 
 ![Prix immobilier réel vs prix avec le bruit de Spotify sur la Tour Eiffel](graphe_immobilier_prix.png)
 
-Tous les arrondissements de Paris deviennent inhabitables ou presque. Les beaux quartiers du 7e, 16e et 6e — parmi les plus chers de France — voient leur valeur tomber à **zéro**. Même en banlieue proche, les prix s'effondrent de 30 à 80%.
+Tous les arrondissements de Paris deviennent inhabitables ou presque. Les beaux quartiers du 7e, 16e et 6e — parmi les plus chers de France — voient leur valeur tomber à **zéro**. Même en banlieue proche, les prix s'effondrent de 30 à 80%[^dvf].
 
 ![Dépréciation en pourcentage du prix immobilier](graphe_immobilier_perte.png)
 
@@ -90,7 +90,7 @@ Sur la carte ci-dessous, chaque arrondissement et commune est positionné géogr
 
 ### Répartition par genre musical
 
-Si on était des cochons, chaque haut-parleur diffuserait aléatoirement des chansons les unes à la suite des autres et ce mélange ferait une sorte de bruit blanc. Mais comme on est sympa, on respecte les proportions réelles d'écoute Spotify en France et chaque (groupe de) haut-parleurs sera spécialisé dans un type de musique. Chaque genre se voit attribuer un **quadrant** de la Tour Eiffel, proportionnel à sa part d'écoute.
+Si on était des cochons, chaque haut-parleur diffuserait aléatoirement des chansons les unes à la suite des autres et ce mélange ferait une sorte de bruit blanc. Mais comme on est sympa, on respecte les proportions réelles d'écoute Spotify en France[^snep] et chaque (groupe de) haut-parleurs sera spécialisé dans un type de musique. Chaque genre se voit attribuer un **quadrant** de la Tour Eiffel, proportionnel à sa part d'écoute.
 
 ![Répartition des écoutes Spotify France par genre](graphe_genres.png)
 
@@ -108,7 +108,7 @@ Chaque secteur angulaire de la Tour Eiffel diffuse un genre différent. La puiss
 
 ### Les profils fréquentiels
 
-Chaque genre musical a un **profil fréquentiel** différent. Le métal et le rap ont beaucoup d'énergie dans les basses fréquences (< 200 Hz), tandis que le classique et le jazz sont davantage concentrés dans les médiums et les aigus.
+Chaque genre musical a un **profil fréquentiel** différent[^tzanetakis]. Le métal et le rap ont beaucoup d'énergie dans les basses fréquences (< 200 Hz), tandis que le classique et le jazz sont davantage concentrés dans les médiums et les aigus.
 
 ![Spectres fréquentiels typiques par genre](graphe_spectres.png)
 
@@ -118,7 +118,7 @@ C'est là où les choses deviennent asymétriques. L'air absorbe les sons diffé
 
 - À **100 Hz** (basses) : seulement **0,2 dB/km** d'absorption
 - À **1 000 Hz** (médiums) : **2,8 dB/km**
-- À **8 000 Hz** (aigus) : **25 dB/km**
+- À **8 000 Hz** (aigus) : **25 dB/km**[^iso]
 
 ![Absorption atmosphérique en fonction de la fréquence](graphe_absorption.png)
 
@@ -140,7 +140,7 @@ Les personnes sourdes n'entendent pas le son par l'oreille. Mais les basses fré
 
 ![Pression acoustique par genre](graphe_pression_genre.png)
 
-À partir de **110 dB** dans les basses fréquences, les vibrations sont ressenties physiquement. Les sourds ne pourraient donc pas vivre tranquillement dans le quadrant métal ou rap, même s'ils n'entendent rien.
+À partir de **110 dB** dans les basses fréquences, les vibrations sont ressenties physiquement[^vibro]. Les sourds ne pourraient donc pas vivre tranquillement dans le quadrant métal ou rap, même s'ils n'entendent rien.
 
 ### Des immeubles qui s'effondrent
 
@@ -149,7 +149,7 @@ Les basses fréquences sont particulièrement destructrices pour les bâtiments.
 - **140 dB** : fissures dans le plâtre
 - **150 dB** : fenêtres brisées, structures légères endommagées
 - **160 dB** : dommages structurels sérieux
-- **170 dB** : effondrement de maçonnerie
+- **170 dB** : effondrement de maçonnerie[^struct]
 
 Le quadrant métal, avec ses 80 Hz dominants, provoquerait des dégâts structurels sur plusieurs kilomètres. Le quadrant classique, avec ses fréquences plus hautes, verrait ses vibrations absorbées beaucoup plus vite.
 
@@ -181,7 +181,7 @@ En ne regardant que les vibrations basses fréquences (> 110 dB), on obtient une
 
 ### L'artiste le plus écouté de France
 
-Jul est l'artiste le plus streamé en France depuis plusieurs années, avec environ **1,8%** de l'ensemble des écoutes Spotify françaises. Ça peut paraître peu, mais rapporté à notre installation :
+Jul est l'artiste le plus streamé en France depuis plusieurs années[^jul], avec environ **1,8%** de l'ensemble des écoutes Spotify françaises. Ça peut paraître peu, mais rapporté à notre installation :
 
 - **9 000 enceintes** dédiées exclusivement à Jul
 - **18 000 watts** de Jul pur
@@ -227,17 +227,17 @@ Vous vous souvenez de Marty McFly dans l'intro de *Retour vers le futur*, qui br
 
 ### Mais d'abord : est-ce que ça rentre ?
 
-Nos petites enceintes Bluetooth de 10×10 cm tenaient confortablement sur la Tour (20% de la surface, 1% du poids). Mais une enceinte de concert fait **50×50 cm** et pèse **35 kg**. Faisons le calcul :
+Nos petites enceintes Bluetooth de 10×10 cm tenaient confortablement sur la Tour (2,5% de la surface, 2% du poids). Mais une enceinte de concert fait **50×50 cm** et pèse **35 kg**. Faisons le calcul :
 
-| Type d'enceinte | Dimensions | Poids unitaire | Surface totale | Poids total | Tours Eiffel nécessaires |
-|-----------------|-----------|---------------|----------------|-------------|-------------------------|
-| Bluetooth (2W) | 10×10 cm | 0,3 kg | 5 000 m² | 150 t | **0,2** (ça rentre) |
-| Salon (20W) | 20×15 cm | 2 kg | 15 000 m² | 1 000 t | 0,6 (ça rentre juste) |
-| Sono (200W) | 35×30 cm | 15 kg | 52 500 m² | 7 500 t | **2,1** |
-| Concert (2 000W) | 50×50 cm | 35 kg | 125 000 m² | 17 500 t | **5** |
-| Festival (12 000W) | 80×80 cm | 80 kg | 320 000 m² | 40 000 t | **13** |
+| Type d'enceinte | Dimensions | Poids unitaire | Surface totale | Poids total | vs Tour (200 000 m², 7 300 t) |
+|-----------------|-----------|---------------|----------------|-------------|-------------------------------|
+| Bluetooth (2W) | 10×10 cm | 0,3 kg | 5 000 m² | 150 t | **ça rentre** (2,5% surface) |
+| Salon (20W) | 20×15 cm | 2 kg | 15 000 m² | 1 000 t | ça rentre (7,5% surface) |
+| Sono (200W) | 35×30 cm | 15 kg | 52 500 m² | 7 500 t | ça rentre (26% surface, poids = Tour) |
+| Concert (2 000W) | 50×50 cm | 35 kg | 125 000 m² | 17 500 t | **63% surface**, 2,4× le poids |
+| Festival (12 000W) | 80×80 cm | 80 kg | 320 000 m² | 40 000 t | **1,6× la surface**, 5,5× le poids |
 
-À partir de la sono de bar, **ça ne rentre plus**. Les enceintes de concert nécessiteraient **5 Tours Eiffel** de surface, et pèseraient 2,4 fois le poids de la Tour elle-même. Pour les enceintes de festival, il faudrait **13 Tours Eiffel** et les enceintes pèseraient 5,5 fois la structure.
+En surface, la Tour tient jusqu'aux enceintes de concert — mais le **poids** devient le vrai problème. À 200W, les enceintes pèsent déjà autant que la charpente. À 2 000W, les 17 500 tonnes feraient plier la structure. Et à 12 000W, les 40 000 tonnes d'enceintes pèsent **5,5 fois la Tour elle-même**.
 
 ### Alternative : un cylindre géant
 
@@ -271,7 +271,7 @@ Ces rayons sont calculés avec la loi en $1/r^2$ **sans absorption atmosphériqu
 
 ### La consommation en réacteurs nucléaires
 
-Un réacteur nucléaire produit environ **900 MW**. Voici ce qu'il faut pour alimenter nos enceintes :
+Un réacteur nucléaire produit environ **900 MW**[^nuc]. Voici ce qu'il faut pour alimenter nos enceintes :
 
 | Type d'enceinte | Puissance totale | Réacteurs nucléaires | Part de la production française |
 |-----------------|-----------------|---------------------|-------------------------------|
@@ -331,46 +331,32 @@ Paris est entièrement inhabitable. L'immobilier s'effondre. Les sourds sont ép
 
 ## Sources
 
-**Spotify et écoute musicale :**
+[^spotify]: Spotify comptait 675 millions d'utilisateurs actifs mensuels fin 2024 (Spotify Earnings Q4 2024). La France représente environ 3,5% du marché mondial, soit ~24 millions d'utilisateurs. Le SNEP rapporte 122 milliards d'écoutes en streaming en France en 2024. Voir [SNEP, Les Chiffres](https://www.snepmusique.com/les-chiffres/).
 
-- Spotify Company Info & Earnings Reports — [newsroom.spotify.com](https://newsroom.spotify.com/company-info/)
-- SNEP, Bilan du marché de la musique — [snepmusique.com](https://www.snepmusique.com/les-chiffres/)
-- Business of Apps, Spotify Statistics — [businessofapps.com](https://www.businessofapps.com/data/spotify-statistics/)
-- IFPI Global Music Report 2024 — [ifpi.org](https://www.ifpi.org/resources/)
+[^ecoute]: Spotify rapporte un temps d'écoute moyen d'environ 30 minutes par jour et par utilisateur dans ses rapports trimestriels. Cette estimation est cohérente avec les données IFPI (*Global Music Report*).
 
-**Acoustique et propagation du son :**
+[^tour]: Tour Eiffel : charpente métallique de 7 300 tonnes, poids total 10 100 tonnes, hauteur 330 m, surface à peindre 200 000 m². Source : [site officiel, chiffres clés](https://www.toureiffel.paris/fr/le-monument/chiffres-cle) et [Wikipédia, données techniques](https://fr.wikipedia.org/wiki/Donn%C3%A9es_techniques_de_la_tour_Eiffel).
 
-- ISO 9613-1:1993, Attenuation of sound during propagation outdoors
-- OMS, Guidelines for Community Noise (1999)
-- INRS, Bruit en milieu de travail — [inrs.fr](https://www.inrs.fr/risques/bruit/ce-qu-il-faut-retenir.html)
-- Kinsler et al., *Fundamentals of Acoustics*, Wiley (2000)
+[^kinsler]: Kinsler L.E. et al., *Fundamentals of Acoustics*, 4e éd., Wiley (2000). La loi de l'inverse du carré ($I = P/4\pi r^2$) est le modèle standard pour une source ponctuelle en champ libre.
 
-**Dommages structurels :**
+[^inrs]: INRS, *Bruit en milieu de travail* : l'ouïe est en danger à partir de 80 dB sur 8h, danger immédiat au-dessus de 135 dB. Le seuil de douleur est généralement situé autour de 120-130 dB. Voir [inrs.fr](https://www.inrs.fr/risques/bruit/ce-qu-il-faut-retenir.html). Voir aussi OMS, *Guidelines for Community Noise* (1999).
 
-- NASA Technical Report CR-1780, Sonic Boom Damage to Buildings (1971)
-- Bachmann et al., *Vibration Problems in Structures*, Birkhauser (1995)
+[^nelson]: Nelson J.P., *Meta-analysis of airport noise and hedonic property values*, Journal of Transport Economics and Policy, vol. 38, n° 1 (2004). Cette méta-analyse de 33 études trouve un indice de dépréciation moyen (NSDI) de 0,5% à 2% par dB au-dessus du bruit ambiant. Nous utilisons 0,9%, valeur médiane de la littérature.
 
-**Perception vibrotactile (sourds) :**
+[^snep]: Répartition par genre estimée à partir des données SNEP (*Bilan du marché de la musique*), des classements Spotify France et de la littérature sur les habitudes d'écoute françaises. Les proportions exactes ne sont pas publiées par Spotify et constituent des estimations.
 
-- Verrillo R.T., Vibration Sensation in Humans, *Music Perception* (1992)
-- Russo F.A. et al., Vibrotactile perception of musical pitch (2012)
+[^iso]: ISO 9613-1:1993, *Acoustics — Attenuation of sound during propagation outdoors — Part 1: Calculation of the absorption of sound by the atmosphere*. Norme internationale de référence pour l'absorption atmosphérique, conditions standard 20°C, 50% HR.
 
-**Immobilier et bruit :**
+[^vibro]: Le seuil de perception vibrotactile des basses fréquences se situe autour de 100-110 dB SPL. Voir : Verrillo R.T., *Vibration Sensation in Humans*, Perception & Psychophysics (1966) ; et la synthèse dans Russo F.A. et al., *Vibrotactile Sensitivity of the Foot*, Ear and Hearing (2020).
 
-- Notaires de Paris, base BIEN — [paris.notaires.fr](https://paris.notaires.fr/fr/prix-immobilier)
-- MeilleursAgents — [meilleursagents.com](https://www.meilleursagents.com/prix-immobilier/paris-75000/)
-- INSEE / DVF — [app.dvf.etalab.gouv.fr](https://app.dvf.etalab.gouv.fr/)
-- ADEME, Coût social du bruit en France (2021)
-- Nelson J.P., Meta-analysis of airport noise and hedonic property values, *JTEP* (2004)
-- Theebe M.A.J., The Impact of Traffic Noise on House Prices, *JREFE* (2004)
+[^struct]: Les seuils de dommages structurels par ondes acoustiques proviennent de la littérature sur les bangs soniques et les vibrations industrielles. Voir : Bachmann H. et al., *Vibration Problems in Structures*, Birkhäuser (1995). Les valeurs exactes (140-170 dB) sont des ordres de grandeur issus de la littérature, pas des seuils normés.
 
-**Profils fréquentiels :**
+[^jul]: Jul est régulièrement l'artiste le plus streamé en France sur Spotify depuis 2018 (Spotify Charts France, classements annuels SNEP). Sa part de 1,8% est une estimation basée sur ses volumes de streams rapportés au total national.
 
-- Tzanetakis G. & Cook P., Musical Genre Classification of Audio Signals, *IEEE* (2002)
-- Peeters G., A large set of audio features for sound description, IRCAM (2004)
+[^dvf]: Prix immobiliers par arrondissement : base DVF (Demandes de Valeurs Foncières), données publiques. Voir [app.dvf.etalab.gouv.fr](https://app.dvf.etalab.gouv.fr/).
 
-**Tour Eiffel :**
+[^nuc]: Un réacteur nucléaire français produit en moyenne 900 MW à 1 450 MW de puissance électrique. Source : EDF, [Le parc nucléaire EDF](https://www.edf.fr/groupe-edf/premier-electricien-mondial/nos-energies/energies-nucleaires/le-parc-nucleaire-edf).
 
-- Site officiel — [toureiffel.paris](https://www.toureiffel.paris/fr/le-monument/chiffres-cles)
+[^tzanetakis]: Tzanetakis G. & Cook P., *Musical Genre Classification of Audio Signals*, IEEE Transactions on Speech and Audio Processing, vol. 10, n° 5 (2002). Les profils spectraux par genre utilisés dans cet article sont des modélisations simplifiées inspirées de cette littérature.
 
 **Code source :** disponible sur [GitHub](https://github.com/AAudes/Spotify_tour_eiffel).
