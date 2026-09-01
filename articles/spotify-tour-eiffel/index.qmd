@@ -261,17 +261,15 @@ Mais bon, on ne va pas se laisser arrêter par un détail logistique.
 
 ### Les rayons d'impact
 
-Ces rayons sont calculés avec la loi en $1/r^2$ **sans absorption atmosphérique** — c'est le pire cas théorique. En pratique, l'absorption réduit significativement la portée, surtout pour les fréquences élevées. Les cartes par genre (plus bas) montrent les distances réelles avec absorption.
+Ces rayons sont calculés **avec absorption atmosphérique** à 80 Hz (fréquence basse — le pire cas réaliste, car les basses portent le plus loin)[^iso]. Les valeurs exactes sortent du script `08_puissance.R`.
 
-| Type d'enceinte | Puissance totale | Rayon danger (85 dB)* | Rayon douleur (120 dB)* |
+| Type d'enceinte | Puissance totale | Rayon danger (85 dB) | Rayon douleur (120 dB) |
 |-----------------|-----------------|---------------------|----------------------|
-| Bluetooth (2W) | 1 MW | ~15 km | ~1 km |
-| Salon (20W) | 10 MW | ~47 km | ~3 km |
-| Sono (200W) | 100 MW | ~150 km | ~9 km |
-| Concert (2 000W) | 1 GW | ~470 km | ~30 km |
-| Festival (12 000W) | 6 GW | ~1 170 km | ~78 km |
-
-*\*sans absorption atmosphérique*
+| Bluetooth (2W) | 1 MW | ~14 km | ~1 km |
+| Salon (20W) | 10 MW | ~38 km | ~2 km |
+| Sono (200W) | 100 MW | ~90 km | ~8 km |
+| Concert (2 000W) | 1 GW | ~130 km | ~20 km |
+| Festival (12 000W) | 6 GW | ~170 km | ~35 km |
 
 ### La consommation en réacteurs nucléaires
 
@@ -307,13 +305,13 @@ Avec nos petites enceintes de 2W, les dommages structurels (fissures, fenêtres 
 
 ![Zones de destruction structurelle en fonction de la puissance](graphe_destruction_puissance.png)
 
-### L'Europe entière sous le bruit
+### Le nord de la France sous le bruit
 
-À 12 000W par enceinte, le rayon de danger auditif (85 dB) dépasse **1 000 km**. Londres, Bruxelles, Amsterdam, Barcelone, Milan, Berlin — toutes ces villes sont dans la zone dangereuse. Même Madrid, à plus de 1 000 km, reste au-dessus de 80 dB.
+À 12 000W par enceinte, même avec l'absorption atmosphérique, le rayon de danger auditif (85 dB) atteint environ **170 km** à 80 Hz. Toute l'Île-de-France est inhabitable, et les villes voisines — Rouen, Reims, Tours, Lille — sont dans la zone dangereuse ou au seuil de douleur.
 
-![Carte de l'Europe — zones d'impact à pleine puissance](carte_europe_12kw.png)
+![Carte de l'impact à pleine puissance — avec absorption atmosphérique](carte_france_12kw.png)
 
-On passe d'une catastrophe parisienne à une catastrophe continentale. L'Europe occidentale entière serait inhabitable, et il faudrait aller jusqu'à Moscou ou Marrakech pour retrouver un niveau sonore acceptable.
+Sans absorption atmosphérique, le rayon théorique atteindrait ~1 170 km (Londres, Barcelone, Berlin). Mais l'air nous sauve : même à 80 Hz, l'absorption cumule ~0,12 dB/km, soit ~140 dB de perte sur 1 000 km. La catastrophe reste française, pas continentale — mais c'est une maigre consolation.
 
 ---
 

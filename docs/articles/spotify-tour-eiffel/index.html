@@ -206,7 +206,7 @@ window.Quarto = {
   <li><a href="#la-consommation-en-réacteurs-nucléaires" id="toc-la-consommation-en-réacteurs-nucléaires" class="nav-link" data-scroll-target="#la-consommation-en-réacteurs-nucléaires">La consommation en réacteurs nucléaires</a></li>
   <li><a href="#la-carte-de-france-à-2-000w" id="toc-la-carte-de-france-à-2-000w" class="nav-link" data-scroll-target="#la-carte-de-france-à-2-000w">La carte de France à 2 000W</a></li>
   <li><a href="#des-immeubles-qui-seffondrent-à-des-kilomètres" id="toc-des-immeubles-qui-seffondrent-à-des-kilomètres" class="nav-link" data-scroll-target="#des-immeubles-qui-seffondrent-à-des-kilomètres">Des immeubles qui s’effondrent à des kilomètres</a></li>
-  <li><a href="#leurope-entière-sous-le-bruit" id="toc-leurope-entière-sous-le-bruit" class="nav-link" data-scroll-target="#leurope-entière-sous-le-bruit">L’Europe entière sous le bruit</a></li>
+  <li><a href="#le-nord-de-la-france-sous-le-bruit" id="toc-le-nord-de-la-france-sous-le-bruit" class="nav-link" data-scroll-target="#le-nord-de-la-france-sous-le-bruit">Le nord de la France sous le bruit</a></li>
   </ul></li>
   <li><a href="#en-résumé" id="toc-en-résumé" class="nav-link" data-scroll-target="#en-résumé">En résumé</a></li>
   <li><a href="#sources" id="toc-sources" class="nav-link" data-scroll-target="#sources">Sources</a></li>
@@ -518,7 +518,7 @@ window.Quarto = {
 <section id="le-sous-quadrant-jul" class="level3">
 <h3 class="anchored" data-anchor-id="le-sous-quadrant-jul">Le sous-quadrant Jul</h3>
 <p>Jul étant un rappeur, ses enceintes se trouvent dans le <strong>quadrant rap/hip-hop</strong> de la Tour. Il occupe environ 7% du secteur rap (1,5% / 22%), soit un mince sous-secteur angulaire.</p>
-<p>Mais la musique de Jul est dominée par les <strong>basses profondes</strong> (808, sub-bass autour de 70 Hz), qui se propagent très loin grâce à la faible absorption atmosphérique. Résultat : la zone dangereuse de Jul seul (&gt; 85 dB) s’étend sur plusieurs centaines de mètres.</p>
+<p>Mais la musique de Jul est dominée par les <strong>basses profondes</strong> (808, sub-bass autour de 70 Hz), qui se propagent très loin grâce à la faible absorption atmosphérique. Résultat : la zone dangereuse de Jul seul (&gt; 85 dB) s’étend sur environ <strong>2 km</strong>.</p>
 </section>
 <section id="la-carte-des-rues-de-jul" class="level3">
 <h3 class="anchored" data-anchor-id="la-carte-des-rues-de-jul">La carte des rues de Jul</h3>
@@ -707,7 +707,7 @@ window.Quarto = {
 </section>
 <section id="les-rayons-dimpact" class="level3">
 <h3 class="anchored" data-anchor-id="les-rayons-dimpact">Les rayons d’impact</h3>
-<p>Ces rayons sont calculés avec la loi en <span class="math inline">\(1/r^2\)</span> <strong>sans absorption atmosphérique</strong> — c’est le pire cas théorique. En pratique, l’absorption réduit significativement la portée, surtout pour les fréquences élevées. Les cartes par genre (plus bas) montrent les distances réelles avec absorption.</p>
+<p>Ces rayons sont calculés <strong>avec absorption atmosphérique</strong> à 80 Hz (fréquence basse — le pire cas réaliste, car les basses portent le plus loin)<a href="#fn15" class="footnote-ref" id="fnref15" role="doc-noteref"><sup>15</sup></a>. Les valeurs exactes sortent du script <code>08_puissance.R</code>.</p>
 <table class="caption-top table">
 <colgroup>
 <col style="width: 22%">
@@ -719,48 +719,47 @@ window.Quarto = {
 <tr class="header">
 <th>Type d’enceinte</th>
 <th>Puissance totale</th>
-<th>Rayon danger (85 dB)*</th>
-<th>Rayon douleur (120 dB)*</th>
+<th>Rayon danger (85 dB)</th>
+<th>Rayon douleur (120 dB)</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
 <td>Bluetooth (2W)</td>
 <td>1 MW</td>
-<td>~15 km</td>
+<td>~14 km</td>
 <td>~1 km</td>
 </tr>
 <tr class="even">
 <td>Salon (20W)</td>
 <td>10 MW</td>
-<td>~47 km</td>
-<td>~3 km</td>
+<td>~38 km</td>
+<td>~2 km</td>
 </tr>
 <tr class="odd">
 <td>Sono (200W)</td>
 <td>100 MW</td>
-<td>~150 km</td>
-<td>~9 km</td>
+<td>~90 km</td>
+<td>~8 km</td>
 </tr>
 <tr class="even">
 <td>Concert (2 000W)</td>
 <td>1 GW</td>
-<td>~470 km</td>
-<td>~30 km</td>
+<td>~130 km</td>
+<td>~20 km</td>
 </tr>
 <tr class="odd">
 <td>Festival (12 000W)</td>
 <td>6 GW</td>
-<td>~1 170 km</td>
-<td>~78 km</td>
+<td>~170 km</td>
+<td>~35 km</td>
 </tr>
 </tbody>
 </table>
-<p><em>*sans absorption atmosphérique</em></p>
 </section>
 <section id="la-consommation-en-réacteurs-nucléaires" class="level3">
 <h3 class="anchored" data-anchor-id="la-consommation-en-réacteurs-nucléaires">La consommation en réacteurs nucléaires</h3>
-<p>Un réacteur nucléaire produit environ <strong>900 MW</strong><a href="#fn15" class="footnote-ref" id="fnref15" role="doc-noteref"><sup>15</sup></a>. Voici ce qu’il faut pour alimenter nos enceintes :</p>
+<p>Un réacteur nucléaire produit environ <strong>900 MW</strong><a href="#fn16" class="footnote-ref" id="fnref16" role="doc-noteref"><sup>16</sup></a>. Voici ce qu’il faut pour alimenter nos enceintes :</p>
 <table class="caption-top table">
 <colgroup>
 <col style="width: 19%">
@@ -843,16 +842,16 @@ window.Quarto = {
 </figure>
 </div>
 </section>
-<section id="leurope-entière-sous-le-bruit" class="level3">
-<h3 class="anchored" data-anchor-id="leurope-entière-sous-le-bruit">L’Europe entière sous le bruit</h3>
-<p>À 12 000W par enceinte, le rayon de danger auditif (85 dB) dépasse <strong>1 000 km</strong>. Londres, Bruxelles, Amsterdam, Barcelone, Milan, Berlin — toutes ces villes sont dans la zone dangereuse. Même Madrid, à plus de 1 000 km, reste au-dessus de 80 dB.</p>
+<section id="le-nord-de-la-france-sous-le-bruit" class="level3">
+<h3 class="anchored" data-anchor-id="le-nord-de-la-france-sous-le-bruit">Le nord de la France sous le bruit</h3>
+<p>À 12 000W par enceinte, même avec l’absorption atmosphérique, le rayon de danger auditif (85 dB) atteint environ <strong>170 km</strong> à 80 Hz. Toute l’Île-de-France est inhabitable, et les villes voisines — Rouen, Reims, Tours, Lille — sont dans la zone dangereuse ou au seuil de douleur.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="carte_europe_12kw.png" class="img-fluid figure-img"></p>
-<figcaption>Carte de l’Europe — zones d’impact à pleine puissance</figcaption>
+<p><img src="carte_france_12kw.png" class="img-fluid figure-img"></p>
+<figcaption>Carte de l’impact à pleine puissance — avec absorption atmosphérique</figcaption>
 </figure>
 </div>
-<p>On passe d’une catastrophe parisienne à une catastrophe continentale. L’Europe occidentale entière serait inhabitable, et il faudrait aller jusqu’à Moscou ou Marrakech pour retrouver un niveau sonore acceptable.</p>
+<p>Sans absorption atmosphérique, le rayon théorique atteindrait ~1 170 km (Londres, Barcelone, Berlin). Mais l’air nous sauve : même à 80 Hz, l’absorption cumule ~0,12 dB/km, soit ~140 dB de perte sur 1 000 km. La catastrophe reste française, pas continentale — mais c’est une maigre consolation.</p>
 <hr>
 </section>
 </section>
@@ -924,7 +923,8 @@ window.Quarto = {
 <li id="fn12"><p>Le seuil de perception vibrotactile des basses fréquences se situe autour de 100-110 dB SPL. Voir : Verrillo R.T., <em>Vibration Sensation in Humans</em>, Perception &amp; Psychophysics (1966) ; et la synthèse dans Russo F.A. et al., <em>Vibrotactile Sensitivity of the Foot</em>, Ear and Hearing (2020).<a href="#fnref12" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
 <li id="fn13"><p>Les seuils de dommages structurels par ondes acoustiques proviennent de la littérature sur les bangs soniques et les vibrations industrielles. Voir : Bachmann H. et al., <em>Vibration Problems in Structures</em>, Birkhäuser (1995). Les valeurs exactes (140-170 dB) sont des ordres de grandeur issus de la littérature, pas des seuils normés.<a href="#fnref13" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
 <li id="fn14"><p>Jul a dépassé les 10 milliards de streams cumulés sur Spotify (visible sur sa page artiste). Avec une durée moyenne de ~3 min par morceau et un volume annuel estimé à 1,5-2 milliards de streams, cela représente 75-100 millions d’heures/an, soit ~1,5% du total français (4,4 milliards d’heures/an, source SNEP : 122 milliards de streams en 2024).<a href="#fnref14" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn15"><p>Un réacteur nucléaire français produit en moyenne 900 MW à 1 450 MW de puissance électrique. Source : EDF, <a href="https://www.edf.fr/groupe-edf/premier-electricien-mondial/nos-energies/energies-nucleaires/le-parc-nucleaire-edf">Le parc nucléaire EDF</a>.<a href="#fnref15" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn15"><p>ISO 9613-1:1993, <em>Acoustics — Attenuation of sound during propagation outdoors — Part 1: Calculation of the absorption of sound by the atmosphere</em>. Norme internationale de référence pour l’absorption atmosphérique, conditions standard 20°C, 50% HR.<a href="#fnref15" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn16"><p>Un réacteur nucléaire français produit en moyenne 900 MW à 1 450 MW de puissance électrique. Source : EDF, <a href="https://www.edf.fr/groupe-edf/premier-electricien-mondial/nos-energies/energies-nucleaires/le-parc-nucleaire-edf">Le parc nucléaire EDF</a>.<a href="#fnref16" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
 </ol>
 </section></div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
