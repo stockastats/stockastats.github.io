@@ -82,7 +82,11 @@ Seules les communes situées à plus de 20 km conservent l'essentiel de leur val
 
 Sur la carte ci-dessous, chaque arrondissement et commune est positionné géographiquement. La couleur indique le pourcentage de perte de valeur, la taille du point le prix initial au m². Plus on est proche de la Tour, plus c'est violet foncé : inhabitable.
 
-![Impact sur les prix immobiliers par arrondissement et commune](carte_immobilier.png)
+![Impact sur les prix immobiliers par arrondissement et commune — Paris](carte_immobilier.png)
+
+En élargissant la vue à l'Île-de-France, on voit la dépréciation se propager bien au-delà du périphérique. Même des villes comme Melun (45 km), Senlis (45 km) ou Rambouillet (48 km) subissent encore des pertes significatives. Il faut aller jusqu'à Chartres (80 km) ou Beauvais (70 km) pour retrouver des prix presque intacts.
+
+![Impact sur les prix immobiliers — vue Île-de-France](carte_immobilier_idf.png)
 
 ---
 
