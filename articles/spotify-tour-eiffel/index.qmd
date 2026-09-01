@@ -208,10 +208,10 @@ Et si on remplaçait les enceintes Bluetooth par des enceintes de festival (12 0
 | Enceinte | Puissance Jul | Rayon danger (85 dB) |
 |----------|--------------|---------------------|
 | 2W (actuel) | 18 kW | ~500 m |
-| 2 000W (concert) | 18 MW | ~67 km (au-delà de l'Île-de-France) |
-| 12 000W (festival) | 108 MW | ~165 km (Amiens, Rouen, Beauvais) |
+| 2 000W (concert) | 18 MW | ~40 km |
+| 12 000W (festival) | 108 MW | ~89 km |
 
-À 12 000W, ce mince rayon de 6,5° traverse la Picardie et atteint presque la Belgique. Beauvais, Amiens et une partie du nord de la France seraient exposés à des niveaux dangereux de Jul — et *uniquement* de Jul. Les habitants de ces villes entendraient une basse 808 sourde et continue, 24 heures sur 24, sans savoir pourquoi.
+Même à 70 Hz, l'absorption atmosphérique finit par compter sur de longues distances (0,11 dB/km × 89 km ≈ 10 dB de perte supplémentaire). Mais le résultat reste spectaculaire : à 12 000W, ce mince rayon de 6,5° s'étend sur **89 km** au nord de Paris. Toute la frange sud de la Picardie serait exposée à des niveaux dangereux de Jul — et *uniquement* de Jul. Les habitants entendraient une basse 808 sourde et continue, 24 heures sur 24, sans savoir pourquoi.
 
 ![Le rayon de Jul à pleine puissance — un secteur de 6,5° qui découpe le nord de la France](carte_jul_france.png)
 
@@ -257,13 +257,17 @@ Mais bon, on ne va pas se laisser arrêter par un détail logistique.
 
 ### Les rayons d'impact
 
-| Type d'enceinte | Puissance totale | Rayon danger (85 dB) | Rayon douleur (120 dB) |
+Ces rayons sont calculés avec la loi en $1/r^2$ **sans absorption atmosphérique** — c'est le pire cas théorique. En pratique, l'absorption réduit significativement la portée, surtout pour les fréquences élevées. Les cartes par genre (plus bas) montrent les distances réelles avec absorption.
+
+| Type d'enceinte | Puissance totale | Rayon danger (85 dB)* | Rayon douleur (120 dB)* |
 |-----------------|-----------------|---------------------|----------------------|
 | Bluetooth (2W) | 1 MW | ~15 km | ~1 km |
 | Salon (20W) | 10 MW | ~47 km | ~3 km |
 | Sono (200W) | 100 MW | ~150 km | ~9 km |
 | Concert (2 000W) | 1 GW | ~470 km | ~30 km |
 | Festival (12 000W) | 6 GW | ~1 170 km | ~78 km |
+
+*\*sans absorption atmosphérique*
 
 ### La consommation en réacteurs nucléaires
 

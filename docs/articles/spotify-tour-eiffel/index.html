@@ -544,16 +544,16 @@ window.Quarto = {
 <tr class="even">
 <td>2 000W (concert)</td>
 <td>18 MW</td>
-<td>~67 km (au-delà de l’Île-de-France)</td>
+<td>~40 km</td>
 </tr>
 <tr class="odd">
 <td>12 000W (festival)</td>
 <td>108 MW</td>
-<td>~165 km (Amiens, Rouen, Beauvais)</td>
+<td>~89 km</td>
 </tr>
 </tbody>
 </table>
-<p>À 12 000W, ce mince rayon de 6,5° traverse la Picardie et atteint presque la Belgique. Beauvais, Amiens et une partie du nord de la France seraient exposés à des niveaux dangereux de Jul — et <em>uniquement</em> de Jul.&nbsp;Les habitants de ces villes entendraient une basse 808 sourde et continue, 24 heures sur 24, sans savoir pourquoi.</p>
+<p>Même à 70 Hz, l’absorption atmosphérique finit par compter sur de longues distances (0,11 dB/km × 89 km ≈ 10 dB de perte supplémentaire). Mais le résultat reste spectaculaire : à 12 000W, ce mince rayon de 6,5° s’étend sur <strong>89 km</strong> au nord de Paris. Toute la frange sud de la Picardie serait exposée à des niveaux dangereux de Jul — et <em>uniquement</em> de Jul.&nbsp;Les habitants entendraient une basse 808 sourde et continue, 24 heures sur 24, sans savoir pourquoi.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="carte_jul_france.png" class="img-fluid figure-img"></p>
@@ -700,6 +700,7 @@ window.Quarto = {
 </section>
 <section id="les-rayons-dimpact" class="level3">
 <h3 class="anchored" data-anchor-id="les-rayons-dimpact">Les rayons d’impact</h3>
+<p>Ces rayons sont calculés avec la loi en <span class="math inline">\(1/r^2\)</span> <strong>sans absorption atmosphérique</strong> — c’est le pire cas théorique. En pratique, l’absorption réduit significativement la portée, surtout pour les fréquences élevées. Les cartes par genre (plus bas) montrent les distances réelles avec absorption.</p>
 <table class="caption-top table">
 <colgroup>
 <col style="width: 22%">
@@ -711,8 +712,8 @@ window.Quarto = {
 <tr class="header">
 <th>Type d’enceinte</th>
 <th>Puissance totale</th>
-<th>Rayon danger (85 dB)</th>
-<th>Rayon douleur (120 dB)</th>
+<th>Rayon danger (85 dB)*</th>
+<th>Rayon douleur (120 dB)*</th>
 </tr>
 </thead>
 <tbody>
@@ -748,6 +749,7 @@ window.Quarto = {
 </tr>
 </tbody>
 </table>
+<p><em>*sans absorption atmosphérique</em></p>
 </section>
 <section id="la-consommation-en-réacteurs-nucléaires" class="level3">
 <h3 class="anchored" data-anchor-id="la-consommation-en-réacteurs-nucléaires">La consommation en réacteurs nucléaires</h3>
