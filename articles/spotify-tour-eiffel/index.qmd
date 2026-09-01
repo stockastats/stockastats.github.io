@@ -281,6 +281,12 @@ Avec les enceintes de concert, il faut **un réacteur nucléaire dédié** rien 
 
 ![Rayon d'impact pour différents types d'enceintes](graphe_puissance_comparaison.png)
 
+### La carte de France à 2 000W
+
+À 2 000W par enceinte, la carte des zones dangereuses (> 85 dB) par genre n'est plus un plan de Paris — c'est une carte de France. On retrouve la forme asymétrique : le métal et le rap, avec leurs basses fréquences, découpent la France sur des centaines de kilomètres, tandis que le classique et le jazz ne dépassent pas l'Île-de-France.
+
+![Zone dangereuse par genre à 2 000W — les secteurs couvrent la France](carte_france_2kw.png)
+
 ### Des immeubles qui s'effondrent à des kilomètres
 
 Avec nos petites enceintes de 2W, les dommages structurels (fissures, fenêtres brisées) restaient confinés à quelques mètres du pied de la Tour. Mais en montant la puissance, la zone de destruction s'étend considérablement — surtout dans le quadrant métal, où les basses fréquences (80 Hz) ne sont quasiment pas absorbées par l'air.
